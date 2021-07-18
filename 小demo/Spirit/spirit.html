@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spirit</title>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        list-style: none;
+    }
+    .box{
+        position: relative;
+        height: 800px;
+        background: url(./img/bg.jpg) repeat;
+        margin: 0 auto;
+        animation: backgroungRun linear 10s infinite;
+    }
+    ul{
+        position: absolute;
+        left: 300px;
+        top: 400px;
+    }
+    ul li{
+        width: 200px;
+        height: 180px;
+        float: left;
+    }
+    ul li:nth-child(1),
+    ul li:nth-child(2){
+        width: 200px;
+        height: 180px;
+        background: url(./img/1.png);
+        animation: Run1 steps(8) 1s infinite;
+    }
+    ul li:nth-child(2){
+        margin-top: -10px;
+        background: url(./img/2.png);
+    }
+    ul li:nth-child(3){
+        margin-top: -30px;
+        width: 180px;
+        height: 200px;
+        background: url(./img/3.png);
+        animation: Run2 steps(8) 1s infinite;
+    }
+    ul li:nth-child(4){
+        width: 200px;
+        height: 180px;
+        background: url(./img/4.png);
+        animation: Run3 steps(8) 1s infinite;
+    }
+    @keyframes backgroungRun{
+        0%{
+            background-position: left top;
+        }
+        100%{
+            background-position: 1000px top;
+        }
+    }
+
+    @keyframes Run1{
+        0%{
+            background-position: left top;
+        }
+        100%{
+            background-position: -1600px top;
+        }
+    }
+    
+    @keyframes Run2{
+        0%{
+            background-position: left top;
+        }
+        100%{
+            background-position: -1360px top;
+        }
+    }
+    @keyframes Run3{
+        0%{
+            background-position: left top;
+        }
+        100%{
+            background-position: -1680px top;
+        }
+    }
+</style>
+
+</head>
+<body>
+<div class="box">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+/*顶部区域*/
+.top-nav{
+    width: 100%;
+    height: 60px;
+}
+.top{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    background-color: rgb(255, 255, 255);
+}
+.top_in{
+    width: 1500px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.top_left{
+    float: left;
+    overflow: hidden;
+}
+.top_left>h1{
+    margin-top: 5px;
+}
+.top_right{
+    float: right;
+    width: 1000px;
+    height: 60px;
+}
+ .top_nav{
+    width: 550px;
+    height: 60px;
+    float: left;
+}
+.top_nav ul{
+    width: 100% ;
+    height: 60px;
+}
+.top_nav ul>li{
+    float: left;
+    width: 78px;
+    height:60px;
+    text-align: center;
+    margin-left: 10px;
+}
+.top_nav ul>li:nth-child(1){
+    border-bottom: 3px solid red;
+    box-sizing: border-box;
+}
+.top_nav ul>li>a{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(43, 43, 43);
+    line-height:60px;
+}
+
+.top_login{
+    width: 200px;
+    height: 60px;
+    float: right;
+}
+.top_login ul{
+    height: 60px;
+    width: 100%;
+}
+.top_login ul li{
+    float: right;
+    margin-left: 15px;
+
+}
+.top_login ul>li>a{
+    font-size: 16px;
+    color: #666;
+    line-height: 60px;
+}
+.top_login ul>li> span{
+  
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.top .top_in .top_right ul li a:hover{
+    color: red;
+}
+
+/* 轮播图 */
+main{
+    background-color:rgb(240 244 245);
+}
+.cont{
+    width: 100%;
+    height: 480px;
+    text-align: center;
+    z-index: 1;
+}
+.cont_arrow{
+    /* 需要实时获取宽高 */
+    /* width: 1200px; */
+    height: 480px;
+    background-color: rgb(189, 135, 135);
+    margin: 0 auto;
+}
+/* 广告 */
+.slider{
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url(../img_hailuo/d8065ca1516313f0d52ead497e1ad909.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.slider:hover 
+.boxBtnLeft{
+opacity: 0;
+}
+.slider:hover
+.boxBtnRight{
+opacity: 0;
+}
+.boxBtnLeft,
+.boxBtnRight{
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,.5);
+    font-size: 60px;
+    text-align: center;
+    text-indent: 0.2em;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+.boxBtnRight{
+    margin-left: 1460px;
+    text-indent: -0.3em;
+}
+.boxBtnLeft:hover,
+.boxBtnRight:hover{
+    color: #ffe300;
+}
+.box{
+    width: 4140px;
+    height: 100%;
+}
+.box li{
+    height: 100%;
+    width: 1380px;
+    float: left;
+}
+/* .box li:nth-child(1){
+    background: url(../img/fabbd4ecac1f9f953c43661fb0f905b6.jpg);
+}
+
+.box li:nth-child(2){
+    background: url(../img/fabbd4ecac1f9f953c43661fb0f905b6.jpg);
+}
+
+.box li:nth-child(3){
+    background: url(../img/fabbd4ecac1f9f953c43661fb0f905b6.jpg);
+} */
+
+/* 搜索 */
+.find{
+    width: 800px;
+    height: 95px;
+    margin: 0 auto;
+    margin-top: -300px;
+    font-family: 'icomoon-2';    
+}
+.cont_find{
+    position: absolute;
+    width: 800px;
+    height: 56px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    opacity: 0.95;
+}
+.cont-find-img{
+    position: absolute;
+    width: 88px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 10px;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+    padding: 20px 22px;
+    font-size: 15px;
+    line-height: 30px;
+    /* opacity: 0; */
+  }
+  .cont-find-img:hover .dropdown-content{
+    /* opacity: 1; */
+    display: block;
+  }
+  
+.cont-img-out{
+    font-size: 15px;
+    color: #666;
+}
+.cont-find-phone{
+    position: absolute;
+    width: 58px;
+    line-height: 56px;
+    margin-left: 88px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cont-find-phone img{
+    width: 25px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.index-searchbar-wrap{
+    float: left;
+    width: 100%;
+    height: 56px;
+}
+.index-serchar{
+    width: 655px;
+    height: 56px;
+    overflow: hidden;
+    float: right;
+}
+.index-serchar>input{
+    border: none;
+    float: left;
+    width: 85%;
+    height: 100%;
+    text-indent: 1em;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: bold;
+}
+.index-serchar button{
+    float: right;
+    width: 15%;
+    height: 100%;
+    background-color:rgb(234, 67, 53);
+    border: none;
+    font-size: 16px;
+}
+.index-serchar img{
+    width: 25px;
+}
+.find-button{
+    position: absolute;
+    width: 800px;
+    height: 30px;
+    margin-top:66px;
+}
+.find-button span,
+.find-button a{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    float: left;
+    margin-left: 10px;
+}
+.find-button a:hover{
+    color: rgb(241, 241, 241);
+    opacity: 0.5;
+}
+/* 查看 */
+.CK{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+.CK h3{ 
+    font-size: 25px;
+    color: black;
+    margin-bottom: 25px;
+}
+.CK button{
+    padding: 10px 20px;
+    border: none;
+    background-color:rgb(234, 67, 53);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.CK button:hover{
+    background-color:rgb(230, 97, 84);
+}
+/* 列表 */
+.list-all{
+    margin-top: 100px;
+    width: 100%;
+}
+.list-all-out{
+    width: 1100px;
+    margin: 0 auto;
+}
+.list-start{
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.list-start-box span{
+    letter-spacing: 0px;
+    font-size: 15px;
+    display: block;
+}
+.ist-img{
+    margin-bottom: 25px;
+}
+.list-img-out{
+    width: 1200px;
+}
+.list-img-out img{
+    float: left;
+    width: 29%;
+    float: left;
+    margin-bottom: 45px;
+}
+.list-hot{
+    width: 1100px;
+    margin-bottom: 45px;
+}
+.list-hot-t{
+    padding: 40px 40px;
+    background-color: rgb(255, 255, 255);
+}
+.list-hot-out{
+    margin: 0 auto;
+    width: 600px;
+    height: 30px;
+}
+.list-hot li{
+    float: left;
+    font-size: 20px;
+    width: 25%;
+    line-height: 20px;
+}
+
+.list-new-img{
+    width: 100%;
+}
+.list-new-out ul{
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.list-new-out ul li{
+    width: 33%;
+    float: left;
+    margin: calc(( 100px - 30px * 3) / 6 );
+    position: relative;
+    overflow: hidden;
+}
+.list-new-out ul li a{
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+}
+.list-new-out ul li img{
+    width: 100%;
+    transition:all 1s;
+}
+.list-new-out ul li:nth-child(1) img{
+    margin-left: -10px;
+}
+.list-new-out ul li:nth-child(2) img{
+    border-radius: 0 20px 20px 0;
+
+}
+.list-new-out ul li:nth-child(3) img{
+    margin-left: 10px;
+    border-radius: 0 20px 20px 0;
+}
+.list-whrite-box{
+    width: 50%;
+    height: 91.5%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.list-box-out{
+    padding: 20px 30px;
+
+}
+.list-boxchk{
+    margin-top: 8px;
+}
+.list-boxchk span{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    float: left;
+    margin-left: 10px;
+}
+.list-new-out ul li:hover img{
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+}
+
+/* 复选框 简单实现 */
+input[type=checkbox]{
+	visibility: hidden;
+} 
+#color-input-red +label{
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgb(234, 67, 53);
+}
+#color-input-red:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+#color-input-red2 +label{
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgb(234, 67, 53);
+}
+#color-input-red2:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+#color-input-red3 +label{
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgb(234, 67, 53);
+}
+#color-input-red3:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+#color-input-red4 +label{
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgb(234, 67, 53);
+}
+#color-input-red4:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+#color-input-red5 +label{
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgb(234, 67, 53);
+}
+#color-input-red5:checked +label::before{
+    display: block;
+    content: "\2714";
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+/* 复选框简单实现 */
+
+.list-btn{
+    margin-top: 15px;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid black;
+    font-weight: bold;
+}
+.list-btn:hover{
+    background-color: rgb(233, 232, 232);
+}
+
+/* 5 */
+.list-all-img5{
+    height: 670px;
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 7 */
+.list-design{
+    width: 100%;
+    height: 730px;
+}
+.list-design-out{
+    width: 1100px;
+    margin: 0 auto;
+    background-color:red;
+}
+.list-design-out ul li{
+    width: 366px;
+    height: 344px;
+    float: left;
+    margin: calc(( 1100px - 366px * 3) / 6 );
+    text-align: left;
+    line-height: 344px;
+    position: relative;
+}
+.list-design-out ul:nth-child(2) li,
+.list-design-out ul:nth-child(5) li{
+    width: 366px;
+    height: 344px;
+    float: left;
+    margin: calc(( 1100px - 366px * 3) / 6 );
+    text-align: center;
+    line-height: 344px;
+}
+.list-design-out ul:nth-child(3) li,
+.list-design-out ul:nth-child(6) li{
+    width: 366px;
+    height: 344px;
+    float: left;
+    margin: calc(( 1100px - 366px * 3) / 6 );
+    text-align: right;
+    line-height: 344px;
+}
+.list-design-out a{
+    display: inline-block;
+    vertical-align: middle;
+    /* css2方法 */
+    width: 95%;
+    height: 93%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    transition:all 0.8s;
+
+}
+.list-design-out img{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.list-design-out span{
+    position: absolute;
+    height: 80px;
+    line-height: 80px;
+    bottom: 0px;
+    right: 45px;
+    color:black;
+    font-size: 28px;
+    overflow: hidden;
+}
+.list-design-out li:hover a{
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3);
+
+}
+
+/* 尾部 */
+
+.footer{
+	height: 440px;
+    padding-top: 30px;
+    background: url(../img_hailuo/background.svg) center center / auto 100% rgb(46, 49, 57);
+}
+.w{
+    width: 1100px;
+    margin: 0 auto;
+}
+.footer dd,
+.footer dt,
+.footer a{
+    color: rgb(235, 235, 235);
+}
+.mod_service{
+	height: 79px;
+	border-bottom: 1px solid rgb(102, 102, 102);
+}
+.mod_service ul li{
+	float: left;
+	width: 180px;
+	height: 79px;
+}
+.mod_service_zheng{
+	background-position: -253px -3px;
+}
+.mod_service_ping{
+	background-position: -255px -54px;
+}
+.mod_service_bao{
+	background-position: -257px -105px;
+}
+.mod_service_zhen{
+	background-position: -253px -3px;
+}
+.mod_service_title{
+	float: left;
+	margin-left: 5px;
+}
+.mod_service_title h5{
+	margin: 5px 0;
+}
+.mod_help{
+	height: 270px;
+	border-bottom: 1px solid rgb(102, 102, 102);
+}
+.mod_help_item{
+	width: 155px;
+	padding: 20px 0 0 18px;
+	float: left;
+}
+.mod_help_item dt{
+	height: 50px;
+	font-size: 18px;
+}
+.mod_help_item dd{
+	height: 30px;
+}
+.mod_copyright{
+	text-align: center;
+}
+.mod_copyright_links{
+	margin: 20px 0 15px 0;
+}
+.mod_copyright_info{
+	line-height: 18px;
+}

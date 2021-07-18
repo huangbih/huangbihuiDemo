@@ -1,0 +1,242 @@
+/* 头部 */
+.zHeader{
+    width: 100%;
+    height: 56px;
+    background: #ffe300;
+    /* overflow: hidden; */
+    /* overflow: 溢出时会怎么做  overflow: hidden;内容会被修剪，并且其余内容是不可见的。 */
+}
+nav{
+    height: 56px;
+    /* width: 1800; */
+    width: 1760px;
+    margin: 0 auto;
+    /* background: #ffe300; */
+    /* position: relative; */
+}
+.logo{
+    float: left;
+    padding-top: 24px;
+    padding-left: 50px;
+    /* position: absolute;
+    top: 18px;
+    left: 0; */
+}
+.logo>a>img{
+    float: left;
+    width: 100px;
+}
+.header-menu-bar{
+    /* width: 800px; */
+    height: 56px;
+    float: left;
+    /* margin: 0 auto;  */
+    /* text-align: center; */
+    margin-left: 100px;
+}
+.header-menu-bar>ul{
+    height: 56px;
+}
+.header-menu-bar>ul>li{
+    float: left;
+    cursor: pointer;
+    /* cursor: pointer; 鼠标放在li上时 光标呈现为指示链接的指针（一只手） */
+    height: 56px;
+    line-height: 56px;
+    padding: 0 24px;
+    font-size: 15px;
+}
+.header-menu-bar>ul>li>a{
+    font-weight: 500;
+    /* font-weight 属性设置文本的粗细。 */
+    color: black;
+}
+.header-menu-bar li>a>i{
+    float: left;
+    background-image: url(../img/nav-more.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 20px;
+    height: 56px;
+}
+.serch{
+    /* position: absolute;
+    top: 0;
+    right: 192px; */
+    width: 20px;
+    height: 56px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 56px;
+    cursor: pointer; /* 光标呈现为指示链接的指针（一只手） */
+    float: left;
+    /* background: lightgoldenrodyellow; */
+    /* display: inline-block; */
+}
+.serch>i{
+    float: left;
+    background: url(../img/nav-search.svg);
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+}
+
+.header-upload{
+    float: left;
+}
+.upload-link{
+    height: 20px;
+    padding: 20px 20px;
+   float: left;
+}
+.upload-link>i{
+    content: "";
+    float: left;
+    background: url(../img/nav-upload.svg) center center no-repeat;
+    width: 30px;
+    height: 20px;
+}
+.unlogin{
+    float: left;
+    padding: 20px 0;
+}
+.unlogin>li{
+    float: left;
+    cursor: pointer;
+}
+.unlogin>li a{
+    float: left;
+    padding: 0;
+    font-size: 15px; 
+    color: black;   
+    padding: 0 20px;
+}
+.unlogin> i{
+    float: left;
+    width: 1px;
+    height: 20px;
+    background: #444;
+}
+
+.header-menu-bar li:hover,
+.serch:hover,
+.header-upload:hover
+{
+    background-color:rgb(22, 22, 22);
+}
+.header-menu-bar ul>li:hover a
+{
+    color: #ffe300;
+    font-weight: bold;
+}
+.header-menu-bar li:nth-child(8):hover i,
+.serch:hover i,
+.header-upload:hover i
+{
+    /* filter: brightness(700%); */
+    position: relative;
+    filter: drop-shadow(0px 100px 0 #ffe300);
+    bottom: 100px; 
+}
+.toTop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(97, 97, 97,0.5);
+    bottom: 30px;
+    right: 50px;
+    display: block;
+    border-radius: 4px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+.toTop a{
+    color: white;
+}
+/* 尾部 */
+footer{
+    width: 100%;
+    height: 260px;
+    background: #282828;
+    bottom: 0;
+    color: #666;
+    font-size: 14px;
+    font-family: 'icomoon';
+    /* font - family属性指定一个元素的字体。 */
+}
+.footer-wrapper{
+    height: 100%;
+    margin: 0 auto;
+    background: #282828;
+}
+.footer-wrapper-top{
+    width: 1380px;
+    height: 130px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333333;
+    align-items: center;
+    /*  align-items: center; 元素位于容器的中心。  */
+    /* align-items属性将所有直接子节点上的align-self值设置为一个组。 align-self属性设置项目在其包含块中在交叉轴方向上的对齐方式。 */
+    justify-content: space-between;
+    /* 项目位于各行之间留有空白的容器内。 */
+}
+.footer-wrapper-top-left{
+    float: left;
+}
+.footer-wrapper-top-left a {
+    line-height: 130px;
+    margin-right: 24px;
+    /* a标签是行内元素,不能设置width,height。可以设置margin,padding,但是margin,padding属性只对左右有效 */
+}
+.footer-wrapper-top-left::before{
+    /* before 伪元素在元素之前添加内容。这个伪元素允许创作人员在元素内容的最前 面插入生成内容。 */
+    content: "";
+    /* content 属性与 :before 及 :after 伪元素配合使用，来插入生成内容。 */
+    display: inline-block;
+    /* inline-block（融合行内于块级）:结合了inline与block的一些特点，结合了上述inline(行内元素)的第1个特点和block(块级元素)的第2,3个特点.用通俗的话讲，就是不独占一行的块级元素 */
+    background: url(../img/phone.svg);
+    width: 14px;
+    height: 23px;
+    margin-right: 3px;
+    margin-bottom: 55px;
+}
+.footer-wrapper-top-right a{
+    float: right;
+    font-size: 25px;
+    margin-left: 40px;
+    line-height: 130px;
+}
+.footer-wrapper-top-left a:hover{
+    color: rgb(185, 184, 184);
+}
+.footer-wrapper-top-right a:nth-child(2):hover{
+    /* :nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型。 */
+    color: green;
+}
+.footer-wrapper-middle,
+.police{
+    width: 1380px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 50px;
+}
+.footer-wrapper-middle i,
+.police i {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 0 20px;
+    background: #666666;
+    /* vertical-align: middle; */
+    /* 该属性定义行内元素的基线相对于该元素所在行的基线的垂直对齐。允许指定负长度值和百分比值。这会使元素降低而不是升高。在表单元格中，这个属性会设置单元格框中的单元格内容的对齐方式。 */
+}
+.footer-wrapper-middle a:hover,
+.police a:hover{
+    color: rgb(185, 184, 184);
+}
+.footer-copy-right{
+    float: right;
+    margin-top: 33px;
+}
+/* 尾部 */

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.w{
+    width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.login_top{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.login_logo{
+    width: 20%;
+    height: 100%;
+    /* background-color: rosybrown; */
+    float: left;
+    margin-left: 100px;
+}
+.login_logo>a{
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    margin-top: 10px;
+}
+.login_logo img{
+    width: 150px;
+    padding: 10px;
+}
+.login_num{
+    width: 180px;
+    height: 100%;
+    /* background-color: royalblue; */
+    float: right;
+    margin-right: 20px;
+}
+.login_num>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(117, 75, 45, 0.384); */
+    text-align: center;
+    margin-top: 30px;
+}
+.login_num a img{
+    float: left;
+    width: 50px;
+}
+.login_num p{
+    float: right;
+    color:#a0a0a0;
+    font-size: 18px;
+}
+.login_body{
+    width: 100%;
+    height: 372px;
+    background-color: teal;
+    background-image: url(../img/login_06.png);
+    position: relative;
+}
+.login_lo{
+    width: 200px;
+    height: 225px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 265px;
+    padding: 30px;
+}
+.login_lo p{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.login_lo input{
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    margin-bottom: 10px;
+    border:  1px solid #ccc;
+}
+.logo_lo_check{
+    position: absolute;
+    bottom: 58px;
+}
+.login_lo input:nth-child(6){
+    background-color: tomato;
+    width: 20px;
+}
+.login_lo a{
+    line-height: 10px;
+    float: right;
+    line-height: 35px;
+}
+.login_lo>button{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #ff4700;
+    border: #ff4700;
+    color: white;
+}
+.login_floot{
+    height: 150px;
+    width: 100%;
+    /* background-color: thistle; */
+    text-align: center;
+}
+.login_floot>p{
+    line-height: 250px;
+}

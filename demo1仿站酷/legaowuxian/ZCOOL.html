@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐高无限</title>
+    <link type="text/css" href="./css/common.css" rel="stylesheet"/>
+    <link type="text/css" href="./css/base.css" rel="stylesheet"/>
+    <style>
+        /* padding 在设置了长度时会往外多出  */
+        *{
+            padding: 0;                /*内边距*/   
+            margin: 0;            /*外边距*/  
+            list-style-type: none;  /*去掉无序列表点*/
+            text-decoration: none;  /*去掉下划线*/
+            line-height: 1;  /*行高*/ 
+            vertical-align: bottom;  /*vertical-align这个是设置元素的垂直排列的. 垂直对齐底部*/
+            border:none;   /*去边框*/
+        }
+        
+        .fl{float: left;}
+        .fr{float: right;}
+        .qcfd{clear:both;}
+        /* end */
+       
+    </style>
+</head>
+<body>
+        <!-- 头部栏 -->
+        <header class="zHeader">
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="./img/logo.png"></a>
+                </div>
+                <div class="header-menu-bar">
+                    <ul>
+                        <li  style="line-height: 40px;"><a href="../zcool/index.html">首页</a></li>
+                        <li style="line-height: 40px;"><a href="ZCOOL.html">发现</a></li>
+                        <li style="line-height: 40px;"><a href="../zcool/job.html">职位</a></li>
+                        <li style="line-height: 40px;"><a href="#">活动</a></li>
+                        <li style="line-height: 40px;"><a href="../zcool/hellorf.html">正版素材</a></li>
+                        <li style="line-height: 40px;"><a href="../zhankugaoshuo/ZCOOL2.html">课程</a></li>
+                        <li style="line-height: 40px;"><a href="#">版权保护</a></li>
+                        <li style="line-height: 40px;"><a href="#">
+                            <i></i>
+                        </a></li>
+                    </ul>
+                </div>
+             <div style="width: 325px; height: 100%; float: right; ">
+                <div class="serch" >
+                    <i></i>
+                </div>
+                    <div class="header-upload">
+                        <a href="#" class="upload-link" >
+                            <i></i>
+                        </a>
+                    </div>
+                <div class="unlogin">
+                    <li ><a href="#">登录
+                    </a></li>
+                    <i></i>
+                    <li ><a href="#">注册</a></li>
+                </div>
+                <div style="display:none;"></div>
+                <div style="clear:both;"></div>
+             </div> 
+             <div class="qcfd"></div>
+            </nav>
+        </header>
+        <!-- 头部栏end -->
+        <!-- 头部图片 -->
+    <div style="width: 100%; height: 155px; ">
+        <div style=" height: 115px; width: 1380px;  margin: 0 auto; padding: 20px 0;">
+            <img src="./img/95468ada13ed119760068708bd29a9c8.jpg" alt="" style="height: 100%; width: 680px; float: left; border-radius: 5px;">
+            <img src="./img/61538bc3442159ccb93dbb25b675afd5.jpg" alt="" style="height: 100%; width: 680px; float: right; border-radius: 5px;">
+            <div class="qcfd"></div>
+        </div>
+    </div>
+     <!-- 头部图片end -->
+   <div style="width: 100%;  border-top: #eee solid 1px; border-bottom: #eee solid 1px ;">  
+    <div style="width: 1300px; height: 130px;  margin: 0 auto;">
+        <div class="fl" style="width: 960px; height: 95px;   padding: 15px 0 20px 0; color: rgb(158, 160, 156); position: relative;">
+        <p style="font-size: 24px; color: black;">乐高无限</p> 
+        <p style="font-size: 14px; margin-top: 20px;">46天前发布</p> 
+        <p style="font-size: 14px; margin-top: 20px;">原创作品&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;三维&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;动画/影视</p>
+        <p style="position: absolute; right: 30px; bottom: 20px;">7034&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;172</p>
+        </div>
+        <div class="fr" style="width: 339px; height: 100%; position: relative; border-left:#eee solid 1px;">
+            <a href=""><img style="border-radius: 50%; height: 85px; width: 85px; position: absolute;left: 30px; top: 25px;"  src="./img/601604ffee0e8ff8faf0920b032255b07f97d7ab.jpg" alt=""></a>
+            <div style="width: 200px;height: 100px; position: absolute; left: 135px; top: 20px;  ">
+                <a href=""><p style="font-size: 16px;color: black;">POPIC动画</p></a>   <br>
+                <p style=" font-size: 12px; color: rgb(158, 160, 156);">广州&nbsp;|&nbsp;广告营销&nbsp;/&nbsp;艺术</p>
+                <br>
+                <table style="font-size: 14px; color: black; text-align: center; "> 
+                    <!-- text-align: center; 水平居中   
+                        使用display:table-cell;和vertical-align对容器里的文字进行垂直居中 
+                        vertical-align属性只对拥有valign特性的html元素起作用，例如表格元素中的<td><th>等等，而像<div><span>这样的元素是不行的。 -->
+                  <td ><button style="height: 35px; width: 85px; vertical-align: middle; background: #ffe300;; border-radius: 5px;">关注</button></td>
+                  <td ><button style="height: 35px; width: 85px; vertical-align: middle; background: 0 0; border: 1px #999 solid;border-radius: 5px; margin-left: 15px;">私信</button></td>
+                </table>
+            </div>
+        </div>    
+    </div>
+   </div>  
+    <!-- end -->
+    <div style="margin: 0 auto;  width: 1280px;">
+        <div style=" margin-top: 100px; "><img src="./img/01b3f05f4f71ec11013f1a6403a163.jpg@1280w_1l_2o_100sh.jpg" alt=""></div>
+        <div style="margin-top: 45px; "><img  src="./img/015bef5f4f71ee11013e318762765c.jpg@1280w_1l_2o_100sh.jpg" alt=""></div>
+        <div style="margin-top: 45px; "><img  src="./img/0163885f4f71ef11013e3187ed8cff.jpg@1280w_1l_2o_100sh.jpg" alt=""></div>
+    </div>
+    <!-- 大图end -->
+        <!-- 使用vertical-align: middle;对容器里的文字进行垂直居中 -->
+        <div style="margin: 0 auto; margin-top: 90px; height: 70px; width: 120px;  ">
+            <!-- outline: none; 去掉点击后出现的按钮边框 -->
+            <button style=" width: 100%; height: 100%; background: #ffe300;  border-radius: 50px; outline: none;">
+              <img style="margin-top: 8px;" src="./img/点赞.png" alt="">
+              <p style="margin-top: 7px;">171</p>
+            </button>
+        </div>
+        <div style="width: 180px; height: 90px; margin: 0 auto; margin-top: 45px;  " >
+              <p style="font-size: 14px;">-&nbsp;三位站酷推荐设计师推荐&nbsp;-</p>  <br> <br>
+              <td ><a href="" style="margin-left: 19px;"><img src="./img/头像.png" alt=""></a></td>
+              <td ><a href="" style="margin-left: 19px;"><img src="./img/头像.png" alt=""></a></td>
+              <td ><a href="" style="margin-left: 19px;"><img src="./img/头像.png" alt=""></a></td>
+        </div>
+        <!-- end -->
+        <div style="width: 100%; height: 80px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;  margin-top: 80px; ">
+            <div style="width: 1285px; height: 80px; margin: 0 auto; position: relative;  ">
+             <p style="font-size: 12px; position: absolute; top: 34px;">声明：站酷(ZCOOL)内网友所发表的所有内容及言论仅代表其本人，并不反映任何站酷(ZCOOL)之意见及观点。</p>
+                <div style="position: absolute;right: 0; top: 21px; "> 
+                    <button style="text-align: center; height: 35px; width: 85px; border-radius: 3px; border: 1px solid black; background:  0 0; margin-right: 10px;">分享</button>
+                    <button style="text-align: center; height: 35px; width: 85px; border-radius: 3px; border: 1px solid black; background: 0 0;">收藏</button>
+                </div>
+            </div>
+        </div> 
+        <!-- 上end -->
+        <style>
+             .li1{
+            height: 225px;
+            margin-left: 10px;
+            float: left;
+            background: #fff;
+            
+        }
+        .a1{
+            font-size: 13px;
+        }
+        .img1{
+            width: 249px;
+        }
+        </style>
+    <div style=" background: #eee;">    <!-- 给下方内容布置背景色 -->
+           <div style="height: 225px; width: 1285px;  margin: 0 auto; padding: 15px 0;">
+           <li class="li1" style="margin-left: 0;"><a href=""><img class="img1" src="./img/0181205f6c784411013e4584d28db9.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt=""></a> <div style="padding: 13px 15px 0 20px;"><p class="fl"><a href="" class="a1">[POPIC]&nbsp;东方迷城-降临...</a></p><img class="fr" src="./img/热门.png" alt=""></div></li>
+           <li class="li1"><a href=""><img class="img1" src="./img/01d7485f64929811013f3110a3e89d.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt=""></a> <div style="padding: 13px 15px 0 20px;"><p class="fl"><a href="" class="a1">[POPIC]&nbsp;黎明觉醒</a></p><img class="fr" src="./img/热门.png" alt=""></div></li>
+           <li class="li1"><a href=""><img class="img1" src="./img/0184ac5f50cb6c11013f1a64323129.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt=""></a> <div style="padding: 13px 15px 0 20px;"><p class="fl"><a href="" class="a1">斗破苍穹</a></p><img class="fr" src="./img/热门.png" alt=""></div></li>
+           <li class="li1"><a href=""><img class="img1" src="./img/016dcf5f4f71c311013f1a64986b49.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt=""></a> <div style="padding: 13px 15px 0 20px;"><p class="fl"><a href="" class="a1">最强NBA-科比</a></p><img class="fr" src="./img/热门.png" alt=""></div></li>
+           <li class="li1"><a href=""><img class="img1" src="./img/018aef5f4f712b11013f1a64526470.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt=""></a> <div style="padding: 13px 15px 0 20px;"><p class="fl"><a href="" class="a1">阴阳师-鬼域修罗&nbsp;入狂...</a></p><img class="fr" src="./img/热门.png" alt=""></div></li>
+        </div>  
+        <!-- 中图排列end -->  
+    <!-- 下部 -->  
+    <style>
+        .bai{
+            background: #fff;
+        }
+    </style>
+         <!-- 下全 -->
+        <div style="width: 1285px;  margin: 0 auto;">  
+         <div class="fl" style="width: 260px; height: 630px ">   <!-- 左总 -->
+          <div class="bai" style="width: 100%; height: 35px; font-size: 16px; padding-top: 20px;"><p style="margin-left: 20px;">标签</p></div>
+          <div class="bai" style="height: 50px; width: 100%; padding-top: 20px; margin-top: 1px;"><button class="bai" style="height: 30px; width: 50px; border: 1px solid #bbb; border-radius: 5px; margin-left: 20px;">cg</button></div>
+          <div class="bai" style="width: 100%; height: 35px; font-size: 16px; margin-top: 10px; padding-top: 20px;"><p style="margin-left: 20px;">作品信息</p></div>
+          <!-- 作品信息往下 -->
+          <div class="bai" style="width: 100%px; height: 190px; padding-top: 20px; padding-left: 20px; margin-top: 1px;"><p style="font-size: 15px;">创作团体</p>
+            <div class="bai" style="width: 100%; margin-top: 20px;">
+            <a class="fl" href=""><img style="width: 48px; height: 48px; border-radius: 50%;" src="./img/091cda658abdc97a801219c77f0d3fe.jpg" alt=""></a></div>
+            <div class="fl" style="padding: 5px 10px;"> 
+            <div style="margin-bottom: 5px;"><b style="font-size: 16px; color: black;" href="">三维境界</b></div>
+            <img class="fl" style="opacity: 0.3;" src="./img/坐标.png" alt="">  <!-- opacity: 0.3; 改变透明度 -->
+            <p style="line-height: 15px; color: #bbb;">深圳</p> 
+            </div>
+            <!-- 下(创作时间) -->
+            <div class="bai fl" style="width: 220px;  margin-top: 25px; padding-top: 20px; border-top: 1px solid  #eee;">
+                <p style="font-size: 15px;">创作时间</p>   <br>
+                <p style="color: #bbb;">2020/09/02</p>
+            </div> 
+        </div>
+          <div style="margin-top: 10px;"><a href=""><img src="./img/秋色色彩.png" alt="" style="height: 195px; width: 260px; border-radius: 5px;"></a></div>
+        </div>    
+       <!-- 左总end -->
+        <!-- 右 -->
+        <!-- 收录收藏夹开始 -->
+        <div class="fr bai" style="width: 1000px; height: 276px; ">
+             <div style="padding: 20px 20px 0px 20px;">
+                <p class="fl" style="font-size: 16px;">收录收藏夹</p>
+                <p class="fr" style="font-size: 14px; color: red;"><a style="color: red;" href="">查看更多</a>&nbsp;&nbsp;></p>
+                <div class="qcfd"></div>
+             </div>
+             <div style="width: 960px; height: 220px; margin: 0 auto;  margin-top: 20px;">
+                <!-- 重点：运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)； -->
+            <style>
+             .li2{
+                 width: calc((960px - 45px) / 4);
+                 height: 100%;
+                 /* background: powderblue; */
+             }
+             .img2{
+                 width: calc(100% / 2);
+                 height: 90px;
+             }
+             .zth{
+                 color: black;
+                 font-size: 14px;
+             }
+             .div1{
+                width: calc((960px - 45px) / 4);
+                height: 180px;
+                border: solid rgb(102, 100, 100) 1px;
+                border-radius: 5px;
+             }
+            </style>
+            <li class="fl li2" >
+                <div class="div1"><a href="">
+                    <img class="img2 fl" src="./img/01bc4c5f7d5eb011013f3110e5fdd6.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/016a735f6ea31611013f311023611b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/010c9b5f69683311013f3110730834.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/0174875f75c2a211013e4584a6f61b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <div class="qcfd"></div> </a>
+                </div>
+                <div  style="width: 100%; height: 40px; padding: 12px 0 0 10px;"><a href="" class="zth">首页banner推荐</a></div>
+            </li>
+            <li class="fl li2" style="margin-left: 15px;" >
+                <div class="div1"><a href="">
+                    <img class="img2 fl" src="./img/01bc4c5f7d5eb011013f3110e5fdd6.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/016a735f6ea31611013f311023611b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/010c9b5f69683311013f3110730834.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/0174875f75c2a211013e4584a6f61b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <div class="qcfd"></div> </a>
+                </div>
+                <div  style="width: 100%; height: 40px; padding: 12px 0 0 10px;"><a href="" class="zth">三维</a></div>
+            </li>
+            <li class="fl li2" style="margin-left: 15px;" >
+                <div class="div1"><a href="">
+                    <img class="img2 fl" src="./img/01bc4c5f7d5eb011013f3110e5fdd6.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/016a735f6ea31611013f311023611b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/010c9b5f69683311013f3110730834.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/0174875f75c2a211013e4584a6f61b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <div class="qcfd"></div> </a>
+                </div>
+                <div  style="width: 100%; height: 40px; padding: 12px 0 0 10px;"><a href="" class="zth">还可以</a></div>
+            </li>
+            <li class="fl li2" style="margin-left: 15px;" >
+                <div class="div1"><a href="">
+                    <img class="img2 fl" src="./img/01bc4c5f7d5eb011013f3110e5fdd6.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/016a735f6ea31611013f311023611b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/010c9b5f69683311013f3110730834.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <img class="img2 fl" src="./img/0174875f75c2a211013e4584a6f61b.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                    <div class="qcfd"></div> </a>
+                </div>
+                <div  style="width: 100%; height: 40px; padding: 12px 0 0 10px;"><a href="" class="zth">c4d</a></div>
+            </li>
+            </div>
+        </div> <!-- 收藏夹结束 -->
+
+        <div style="width: 1000px; height: 173px; margin-top: 10px; " class="fr bai"> <!-- 登录框 -->
+            <div style=" margin: 0 auto; margin-top: 30px; border: 1px solid #dddddd; border-radius: 5px; background: #f4f4f4; width: 940px; height: 60px;">
+              <div style="width: 160px; height: 36px; margin: 0 auto; margin-top: 10px;" >
+                <button class="fl" style="height: 100%; width: 80px;background: #ffdb3b; border: 1px solid #ffd100; border-radius: 5px;">登录</button>
+                <p class="fr" style="line-height: 35px;">后发布评论</p>
+              </div>
+            </div>
+            <div style="width: 940px; margin: 0 auto; margin-top: 15px; height: 40px; ">
+                <a href=""><img style="opacity: 0.7;" src="./img/表情.png" alt=""></a>&nbsp;&nbsp;<a style="line-height: 18px; opacity: 0.7;" href="">添加表情</a>
+                <button class="fr" style="width: 100px; height: 37px; background: #ffdb3b; border-radius: 5px; opacity: 0.5;">评论</button>
+            </div>
+        </div><!-- 登录框end -->
+        <div class="fr bai" style="width: 940px;  margin-top: 2px; padding: 30px;"> <!-- 评论栏上部 -->
+            <p class="fl">全部评论&nbsp;&nbsp;</p><p class="fl" style="opacity: 0.5;">3</p>
+            <div class="fl" style="width: 100%; height: 90px; padding: 30px 0;  border-bottom: 2px solid #eee; position: relative;">
+              <a href=""><img class="fl" style="width: 50px; height: 50px; border-radius: 50%;" src="./img/019f585e83070ea80120a895bcdf19.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt=""></a>
+              <div class="fl" style=" height: 100%;  padding-left: 20px;"> <div><a href="" style="color: black;">露鹿麓路</a></div>
+                 <br>  <br> <div><p>有点lumino的味道</p> </div>  <br> <br>
+                 <p style="opacity: 0.5;">4天前</p>
+              </div>
+              <div style="position: absolute;bottom: 30px; right: 30px; height: 25px;  ">
+                <a style="opacity: 0.5;" href=""><img style="width: 16px; height: 14px;" src="./img/举报.png" alt="">&nbsp;&nbsp;举报</a> &nbsp;&nbsp;&nbsp;
+                <a  href=""><img style="width: 16px; height: 14px;" src="./img/评论.png" alt=""></a> &nbsp;&nbsp;&nbsp;
+                <a  href=""><img style="width: 16px; height: 14px;" src="./img/点赞3.png" alt="">&nbsp;&nbsp;0</a> 
+              </div>
+            </div>  <!-- 第一个评论end --> 
+            <div class="fl" style="width: 100%; height: 90px; padding: 30px 0;  border-bottom: 2px solid #eee; position: relative;">
+              <a href=""><img class="fl" style="width: 50px; height: 50px; border-radius: 50%;" src="./img/01cb4e5eec0822a801215aa0dc4ae3.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt=""></a>
+              <div class="fl" style=" height: 100%;  padding-left: 20px;"> <div><a href="" style="color: black;">幻子瞄er</a></div>
+                 <br>  <br> <div><p>别带脑子玩就对了，认真你就输了</p> </div>  <br> <br>
+                 <p style="opacity: 0.5;">3天前</p>
+              </div>
+              <div style="position: absolute;bottom: 30px; right: 30px; height: 25px;  ">
+                <a style="opacity: 0.5;" href=""><img style="width: 16px; height: 14px;" src="./img/举报.png" alt="">&nbsp;&nbsp;举报</a> &nbsp;&nbsp;&nbsp;
+                <a  href=""><img style="width: 16px; height: 14px;" src="./img/评论.png" alt=""></a> &nbsp;&nbsp;&nbsp;
+                <a  href=""><img style="width: 16px; height: 14px;" src="./img/点赞3.png" alt="">&nbsp;&nbsp;0</a> 
+              </div>
+            </div>  <!-- 第二个评论end --> 
+            <div class="fl" style="width: 100%; height: 90px; padding: 30px 0;  position: relative;">
+              <a href=""><img class="fl" style="width: 50px; height: 50px; border-radius: 50%;" src="./img/boy.png" alt=""></a>
+              <div class="fl" style=" height: 100%;  padding-left: 20px;"> <div><a href="" style="color: black;">老包菜</a></div>
+                 <br>  <br> <div><p>腾讯是代理商，一款类似我的世界的mc沙盒游戏，可以搭建城市各种东西</p> </div>  <br> <br>
+                 <p style="opacity: 0.5;">2天前</p>
+              </div>
+              <div style="position: absolute;bottom: 30px; right: 30px; height: 25px;  ">
+                <a style="opacity: 0.5;" href=""><img style="width: 16px; height: 14px;" src="./img/举报.png" alt="">&nbsp;&nbsp;举报</a> &nbsp;&nbsp;&nbsp;
+                <a  href=""><img style="width: 16px; height: 14px;" src="./img/评论.png" alt=""></a> &nbsp;&nbsp;&nbsp;
+                <a  href=""><img style="width: 16px; height: 14px;" src="./img/点赞3.png" alt="">&nbsp;&nbsp;0</a> 
+              </div>
+            </div>  <!-- 第三个评论end -->    
+        </div><!-- 评论栏上部end --> 
+          <!-- 评论栏下部 --> 
+        <div class="bai fr" style="width: 1000px; height: 75px;  margin-top: 2px;" position: relative;>     
+            <div class="fr" style="margin-top: 30px; margin-right: 30px;"><a href=""><img class="fl" style="width: 15px;" src="./img/笔.png" alt="">&nbsp;&nbsp;<p style="font-size: 15px;" class="fr">写评论</p> <div class="qcfd"> </div></a></div>
+                <div style="margin: 30px auto; width: 110px; opacity: 0.7;"><p>没有更多评论了</p></div>
+        </div>
+        <!-- 评论栏下部end --> 
+        <!-- 下方图片(从你可能喜欢开始) -->
+        <div class="fr" style="width: 1000px; height: 445px;">
+          <div style="width: 100%; padding: 23px 0; font-size: 14px;"><p class="fl">你可能喜欢</p> <a class="fr" style="color: rgb(235, 64, 64);" href="">换一换</a> <div class="qcfd"></div></div>
+          <div style="width: 100%; height: 330px; background: #eee; ">
+            <style>
+                .div2{
+                   height: 100%;
+                   /*  重点：运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)； 记得加单位px */
+                   width: calc((1000px - 45px) / 4);
+                   margin-left: 15px;
+                }
+                .bianju{
+                    padding: 15px; width: calc(100% - 30);
+                }
+            </style>
+            <!-- 第一张图 -->
+            <div class="div2 bai fl" style="margin-left: 0; border-radius: 5px;">
+              <img style=" width: 100%; border-radius: 5px 5px 0 0;" src="./img/0167675f23d1b3a801215aa0a2edc0.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+              <div class="bianju" style="padding-bottom: 5px;"> <p class="fl" style="font-size: 14px; color: black;">THIS&nbsp;IS&nbsp;TFT!</p> <img  class="fr" src="./img/热门.png" alt=""> <div class="qcfd"></div></div>
+              <div class="bianju" style="padding-top: 0; opacity: 0.8;"><p>三维-动画/影视</p></div>
+              <div class="bianju" style="padding-top: 0; opacity: 0.4;" > <a href="" ><img style="width: 15px;" src="./img/观看量.png" alt="">&nbsp;3.2w</a> &nbsp;&nbsp;
+                <a href=""><img style="height: 12px;" src="./img/评论 (1).png" alt="">&nbsp;评论</a>&nbsp;&nbsp;
+                <a href=""><img style="width: 15px;" src="./img/点赞3.png" alt="">&nbsp;点赞</a>
+              </div>
+              <div class="bianju" style="border-top: #eee 1px solid;">
+                 <div class="fl" style="margin-right: 15px;"><a href=""><img style="width: 24px; border-radius: 50%;" src="./img/0167005f4e197e11013f1a644a6800.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt=""></a></div>
+                 <a href="" class="fl" style="line-height: 24px;">VONSTUDIO</a> <div class="qcfd" ></div>
+              </div>
+            </div> <!-- 第一张图end -->
+             <!-- 第二张图 -->
+            <div class="div2 bai fl" style=" border-radius: 5px;">
+                <img style=" width: 100%; border-radius: 5px 5px 0 0;" src="./img/0167675f23d1b3a801215aa0a2edc0.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                <div class="bianju" style="padding-bottom: 5px;"> <p class="fl" style="font-size: 14px; color: black;">THIS&nbsp;IS&nbsp;TFT!</p> <img  class="fr" src="./img/热门.png" alt=""> <div class="qcfd"></div></div>
+                <div class="bianju" style="padding-top: 0; opacity: 0.8;"><p>三维-动画/影视</p></div>
+                <div class="bianju" style="padding-top: 0; opacity: 0.4;" > <a href="" ><img style="width: 15px;" src="./img/观看量.png" alt="">&nbsp;3.2w</a> &nbsp;&nbsp;
+                  <a href=""><img style="height: 12px;" src="./img/评论 (1).png" alt="">&nbsp;评论</a>&nbsp;&nbsp;
+                  <a href=""><img style="width: 15px;" src="./img/点赞3.png" alt="">&nbsp;点赞</a>
+                </div>
+                <div class="bianju" style="border-top: #eee 1px solid;">
+                   <div class="fl" style="margin-right: 15px;"><a href=""><img style="width: 24px; border-radius: 50%;" src="./img/0167005f4e197e11013f1a644a6800.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt=""></a></div>
+                   <a href="" class="fl" style="line-height: 24px;">VONSTUDIO</a> <div class="qcfd" ></div>
+                </div>
+              </div> <!-- 第二张图end -->
+              <!-- 第三张图 -->
+              <div class="div2 bai fl" style=" border-radius: 5px;">
+                <img style=" width: 100%; border-radius: 5px 5px 0 0;" src="./img/0167675f23d1b3a801215aa0a2edc0.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                <div class="bianju" style="padding-bottom: 5px;"> <p class="fl" style="font-size: 14px; color: black;">THIS&nbsp;IS&nbsp;TFT!</p> <img  class="fr" src="./img/热门.png" alt=""> <div class="qcfd"></div></div>
+                <div class="bianju" style="padding-top: 0; opacity: 0.8;"><p>三维-动画/影视</p></div>
+                <div class="bianju" style="padding-top: 0; opacity: 0.4;" > <a href="" ><img style="width: 15px;" src="./img/观看量.png" alt="">&nbsp;3.2w</a> &nbsp;&nbsp;
+                  <a href=""><img style="height: 12px;" src="./img/评论 (1).png" alt="">&nbsp;评论</a>&nbsp;&nbsp;
+                  <a href=""><img style="width: 15px;" src="./img/点赞3.png" alt="">&nbsp;点赞</a>
+                </div>
+                <div class="bianju" style="border-top: #eee 1px solid;">
+                   <div class="fl" style="margin-right: 15px;"><a href=""><img style="width: 24px; border-radius: 50%;" src="./img/0167005f4e197e11013f1a644a6800.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt=""></a></div>
+                   <a href="" class="fl" style="line-height: 24px;">VONSTUDIO</a> <div class="qcfd" ></div>
+                </div>
+              </div> <!-- 第三张图end -->
+              <!-- 第四张图 -->
+              <div class="div2 bai fl" style=" border-radius: 5px;">
+                <img style=" width: 100%; border-radius: 5px 5px 0 0;" src="./img/0167675f23d1b3a801215aa0a2edc0.jpg@260w_195h_1c_1e_1o_100sh.jpg" alt="">
+                <div class="bianju" style="padding-bottom: 5px;"> <p class="fl" style="font-size: 14px; color: black;">THIS&nbsp;IS&nbsp;TFT!</p> <img  class="fr" src="./img/热门.png" alt=""> <div class="qcfd"></div></div>
+                <div class="bianju" style="padding-top: 0; opacity: 0.8;"><p>三维-动画/影视</p></div>
+                <div class="bianju" style="padding-top: 0; opacity: 0.4;" > <a href="" ><img style="width: 15px;" src="./img/观看量.png" alt="">&nbsp;3.2w</a> &nbsp;&nbsp;
+                  <a href=""><img style="height: 12px;" src="./img/评论 (1).png" alt="">&nbsp;评论</a>&nbsp;&nbsp;
+                  <a href=""><img style="width: 15px;" src="./img/点赞3.png" alt="">&nbsp;点赞</a>
+                </div>
+                <div class="bianju" style="border-top: #eee 1px solid;">
+                   <div class="fl" style="margin-right: 15px;"><a href=""><img style="width: 24px; border-radius: 50%;" src="./img/0167005f4e197e11013f1a644a6800.jpg@80w_80h_1c_1e_1o_100sh.jpg" alt=""></a></div>
+                   <a href="" class="fl" style="line-height: 24px;">VONSTUDIO</a> <div class="qcfd" ></div>
+                </div>
+              </div> <!-- 第四张图end -->
+          </div>
+          <!-- 下部图片end --> 
+         <div style="width: 100%; height: 15px; padding: 20px 0;"><p style="font-size: 15px;">推荐课程</p></div>
+        </div>
+
+       <!-- 最下图片 (推荐课程下方图片) -->
+       <style>
+           .biankuang{
+               border-radius: 5px 5px 0 0;
+           }
+       </style>
+       <div class="fr" style="width: 1000px; height: 180px; padding-bottom: 40px;">
+          <!-- 第一张 -->
+         <div class="div2 bai fl biankuang" style="margin-left: 0;"> 
+           <div class="biankuang" style="width: 100%; height: 132px; background: url(./img/1594267183057.jpg); background-size: 100% 100%;">
+              <div class="fr" style="width: 90px; height: 26px; margin-top: 8px; margin-bottom: 10px; background: rgb(134, 134, 134); color: #fff; opacity: 0.8; "><div style="margin: 6px 6px;"><img class="fl" src="./img/学习路径.png" alt=""><p style="font-size: 14px; ">&nbsp;学习路径</p></div></div>
+           </div>
+           <div style="width: 100%; padding: 10px 0 0 10px;"><a href="" style="font-size: 14px;">视频制作通用入门</a></div>
+        </div>
+        <!-- 第一张end -->
+        <!-- 第二张 -->
+         <div class="div2 bai fl">
+             <a href=""><img class="biankuang" style="width: 100%; height: 132px; " src="./img/1588213045333.jpg" alt=""></a>
+             <div style="width: 100%; padding: 10px 0 0 10px;"><a href="" style="font-size: 14px;">零基础短视频速成班</a></div>
+         </div>
+         <!-- 第二张end -->
+        <!-- 第三张 -->
+         <div class="div2 bai fl">
+            <a href=""><img class="biankuang" style="width: 100%; height: 132px; " src="./img/1588213045333.jpg" alt=""></a>
+            <div style="width: 100%; padding: 10px 0 0 10px;"><a href="" style="font-size: 14px;">零基础短视频速成班</a></div>
+        </div>
+        <!-- 第三张end -->
+        <!-- 第四张 -->
+        <div class="div2 bai fl">
+            <a href=""><img class="biankuang" style="width: 100%; height: 132px; " src="./img/1588213045333.jpg" alt=""></a>
+            <div style="width: 100%; padding: 10px 0 0 10px;"><a href="" style="font-size: 14px;">零基础短视频速成班</a></div>
+        </div>
+         <!-- 第四张end -->
+       </div>
+       <!-- 最下图片 (推荐课程下方图片)end -->
+
+       <div class="qcfd"></div>  <!-- 清除浮动 --> 
+    </div>    
+ 
+    </div><!-- 给下方内容布置背景色 -->
+
+    <!-- 尾部 -->
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-wrapper-top">
+            <div class="footer-wrapper-top-left">
+                <a href="#">移动版</a>
+                <a href="#">关于我们</a>
+                <a href="#">用户协议</a>
+                <a href="#">隐私政策</a>
+                <a href="#">侵权申诉</a>
+                <a href="#">企业服务</a>
+                <a href="#">帮助中心</a>
+                <a href="#">联系我们</a>
+                <a href="#">中文</a>
+                <a href="#">English</a>
+            </div>
+            <div class="footer-wrapper-top-right">
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="footer-wrapper-middle">
+            <a href="#">京公网安备11010502000501号</a>
+            <i></i>
+            <a href="#"> 广播电视节目制作经营许可证（京）字第06990号</a>
+            <i></i>
+            <a href="#">京ICP备11017824号</a>
+            <i></i>
+            <a href="#">京ICP证130164号</a>
+        </div>
+        <div class="police">
+            <a href="">营业执照</a>
+            <i></i>
+            <a href="">网上有害信息举报专区</a>
+            <i></i>
+            <span>不良信息举报电话：010-56538658</span>
+            <i></i>
+            <span>举报邮箱 jubao@zcool.com.cn </span>
+            <i></i>
+            <span>联系电话：010-56538600</span>
+            <div class="footer-copy-right">
+                Copyright © 2006-2020 
+                <a href="#">ZCOOL站酷</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- 尾部end -->
+</body>
+</html>

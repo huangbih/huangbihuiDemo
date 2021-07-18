@@ -1,0 +1,587 @@
+/* padding 在设置了长度时会往外多出  */
+*{
+    padding: 0;                /*内边距*/   
+    margin: 0;            /*外边距*/  
+    list-style-type: none;  /*去掉无序列表点*/
+    text-decoration: none;  /*去掉下划线*/
+    line-height: 1;  /*行高*/ 
+    vertical-align: bottom;  /*vertical-align这个是设置元素的垂直排列的. 垂直对齐底部*/
+    border:none;   /*去边框*/
+    color: black;
+    font-size: 14px;
+    outline: none;
+    /* outline: none; 去掉点击后出现的按钮边框 */
+ }
+
+.fl{ float: left ;}
+.fr{ float: right; }
+.qcfd{clear:both;}
+.a1{
+    padding: 28px 20px;
+}
+.a1 p:hover{
+    font-weight: 700;
+    color: green;
+}
+.a2{
+    padding: 0 15px;
+}
+.a2:hover{
+    font-weight: 700;   /* 字体粗细 */
+    color: green;
+}
+.vip{
+    color: rgb(245, 79, 112);
+}
+.vip:hover{
+   color: red;
+}
+/* 头部搜索栏den */
+.li1{
+    width: calc((1200px - 120px) / 6);
+    height: 100%;
+    /* margin-left: 24px; */
+    text-align: center; /* 字体居中 */
+} 
+.li1>i{
+    padding-top: 30px;
+    color: rgb(40, 178, 139);
+}
+.li1>p{
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(40, 178, 139);
+}
+.ssk{
+    width: 240px; 
+    height: 36px; 
+    border-radius: 20px; 
+    border: 1px solid rgb(184, 181, 181); 
+    z-index: 3;
+    outline: none;
+   /* outline: none; 去掉点击后出现的按钮边框 */
+}
+.ssk:hover{
+    border: 1px solid rgb(40, 178, 139);
+}
+.li1:hover{
+   background:rgb(40, 178, 139);
+}
+.li1:hover i,
+.li1:hover p{
+    color: #fff;
+}
+.zbk,
+.xxlk-pmsj{
+    padding-top: 40px; 
+    text-align: center;  
+}
+.zbk>a,
+.xxlk-pmsj>a{
+    font-size: 18px;
+    
+}
+.zbk>a:hover,
+.xxlk-pmsj>a:hover{
+    border-bottom: 4px solid rgb(40, 178, 139);
+    color:rgb(40, 178, 139) ;
+}
+.zxkc-tp{
+   width: 1200px; 
+   /* height: 280px;  */
+   /* background: chartreuse; */
+   margin: 0 auto;
+   margin-top: 35px;
+}
+.zxkc-tp-li{
+    width: calc((1200px - 60px) / 4);
+    height: 280px;
+    /* background: mediumvioletred; */
+    margin-left: 20px;
+    background: #fff;
+}
+.zxkc-tp-li>img{
+    width: 100%;
+}
+.zxkc-tp-li-zt{
+    width: 254px;
+    padding: 13px 0 0 13px;
+}
+.zxkc-tp-li-zt-p1{
+    font-size: 18px;
+   
+}
+.zxkc-tp-li-zt-p2{
+    margin-top: 15px;
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+}
+.zxkc-tp-li-zt21{
+       margin-top: 30px;
+}
+.zxkc-tp-li-zt22{
+    margin-top: 30px;
+    font-size: 14px;
+    color: red;
+}
+.zxkc-tp-li-zt21>span:hover{
+    color: red;
+}
+.zxkc-tp-li-margin{
+    margin-top: 30px;
+}
+.zxkc-tp-li,
+.yyzb-tp-li,
+.kbsp-tp-li,
+.xxlj-tp-li{
+    transition: all 0.5s;
+}
+.zxkc-tp-li:hover,
+.yyzb-tp-li:hover,
+.kbsp-tp-li:hover,
+.xxlj-tp-li:hover
+ {
+     transform: translateY(-2px);
+     box-shadow:4px 4px 4px 4px rgba(44, 38, 38, 0.377) ;
+            /* outset外侧阴影(默认) */
+}
+.ckgd{
+    width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+}
+.ckgd button{
+    width: 210px;
+    height: 54px;
+    margin: 50px auto;
+    border: 1px solid rgb(217, 248, 217);
+    color:rgb(40, 178, 139) ;
+    background: #fff;
+    outline: none;
+   /* outline: none; 去掉点击后出现的按钮边框 */
+}
+.ckgd button:hover{
+    border: 1px solid rgb(40, 178, 139);
+    cursor: pointer; /* 光标呈现为指示链接的指针（一只手） */
+}
+.yyzb{
+    width: 1200px; 
+    margin: 0 auto; 
+    padding: 70px 0 40px 0; 
+    text-align: center;
+}
+.h11{
+    font-size:40px;
+    font-weight: 400; /* 字体粗细 */
+}
+.yyzb-tp{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.yyzb-tp-li{
+    height: 160px;
+    width: calc(1170px / 2);
+    background: #fff;
+    cursor: pointer;
+    /* cursor: pointer; 鼠标放在li上时 光标呈现为指示链接的指针（一只手） */
+}
+.yyzb-tp-li>img{
+    height: 100%;
+}
+.yyzb-tp-li-wz{
+    /* width: 290px; */
+    padding: 15px 0 0 15px;
+}
+.yyzb-tp-li-wz>p{
+    width: 270px;
+}
+.yyzb-tp-li-wz-p1{
+    padding-top: 15px;
+    font-size: 14px;
+    height: 28px;
+    color: rgb(153, 153, 153);
+    /* 实现2行超出用...隐藏效果 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    /* 实现2行超出用...隐藏效果end  */
+    /* -webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+    display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-   webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。 */
+    /* text-overflow : clip   |  ellipsis
+    clip : 　不显示省略标记（...），而是简单的裁切
+    ellipsis : 　当对象内文本溢出时显示省略标记（...） */
+}
+.yyzb-tp-li-wz-tp{
+    margin-top: 10px;
+}
+.yyzb-tp-li-wz-tp>img{
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.yyzb-tp-li-wz-xia{
+    width: 270px;
+    margin-top: 8px;
+    text-align: center;
+}
+.yyzb-tp-li-wz-xia>p{
+    color: rgb(153, 153, 153);
+    padding-top: 10px;
+}
+.kbsp-tp{
+    width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    /* background: burlywood; */
+}
+.kbsp-tp-li{
+    width: calc((1200px - (24px * 3 + 16px)) / 4);
+    height: calc(100% - 4px);
+    border: 2px solid #eee;
+    margin-left: 24px;
+    cursor: pointer;
+    /* cursor: pointer; 鼠标放在li上时 光标呈现为指示链接的指针（一只手） */
+}
+.kbsp-tp-li>img{
+    width: 100%;
+}
+.kbsp-tp-li-wz1,
+.kbsp-tp-li-wz2{
+    padding: 20px 0;
+    width: calc(100% - 30px);
+}
+.kbsp-tp-li-wz1>p:hover{
+    color: rgb(40, 178, 139);
+}
+.kbsp-tp-li-wz1>p{
+    font-size: 18px;
+}
+.kbsp-tp-li-wz22{
+    color: red;
+    font-size: 14px;
+    /* font-weight: 900; 字体粗细 */
+}
+.kbsp-tp-li-wz3{
+    width: calc(100% - 60px);
+    padding-left: 6px;
+    padding-top: 5px;
+}
+.kbsp-tp-li-wz3-p{
+    width: 100%;
+    height: 28px;
+    color: rgb(102, 102, 102);
+    /* 实现2行超出用...隐藏效果 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    /* 实现2行超出用...隐藏效果end  */
+    /* -webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性：
+    display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+-   webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。 */
+    /* text-overflow : clip   |  ellipsis
+    clip : 　不显示省略标记（...），而是简单的裁切
+    ellipsis : 　当对象内文本溢出时显示省略标记（...） */   
+}
+.xxlj{
+    width: 100%; 
+    background: #eee;
+}
+.xxlj-tp{
+    width: 1200px;
+    height: 370px;
+   /* background: yellowgreen; */
+   margin: 35px auto;
+}
+.xxlj-tp-li{
+    height: 100%;
+    width: calc((100% - 40px) / 3);
+    /* background:yellow; */
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+    /* cursor: pointer; 鼠标放在li上时 光标呈现为指示链接的指针（一只手） */
+}
+.xxlj-tp-li-img1{
+    z-index: 4;
+    width: calc(100% - 20px);
+    /* height: 200px; */
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.xxlj-tp-li-img2{
+    z-index: 3;
+    width: calc(100% - 40px);
+    /* height: 190px; */
+    position: absolute;
+    left: 20px;
+    top: 18px;
+}
+.xxlj-tp-li-img3{
+    z-index: 2;
+    width: calc(100% - 60px);
+    /* height: 180px; */
+    position: absolute;
+    left: 30px;
+    top: 36px;
+}
+.xxlj-tp-li-zt{
+    height: 270px;
+    width: 100%; 
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+}
+.xxlj-tp-li-zt-xia{
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* background: violet; */
+}
+.xxlj-tp-li-zt-xia>p{
+    margin-left: 15px;
+    font-size: 18px;
+}
+.xxlj-tp-li-zt-xia>p:hover{
+    color: rgb(40, 178, 139);
+}
+.xxlj-tp-li-zt-xia-z2{
+    width: calc(100% - 52px);
+    padding: 15px 30px 25px 22px;
+    margin: 0 auto;
+}
+.xxlj-tp-li-zt-xia-z3{
+    width: calc(100% - 44px);
+    padding: 0 22px;
+}
+.hui{
+    color:  rgb(102, 102, 102);
+}
+.hon{
+    color: red;
+}
+.xxlj-tp-li-zt-xia-z3>div>img{
+    height: 14px;
+}
+.xxlj-tp-li-zt-xia-z3>div>a:hover{
+    color: red;
+}
+/* 名家名师 */
+.mjms{
+    width: 100%;
+    /* height: 1200px; */
+}
+.mjms-tp{
+    width: 1200px;
+    margin: 0 auto;
+    /* background: chartreuse; */
+}
+.mjms-tp-li{
+    width: calc((1200px - 50px) / 3);
+    height: calc((1200px - 50px) / 3);
+    background: chocolate;
+    margin-right: 25px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    /* 鼠标进入形成手的形状 */
+}
+
+.mjms-tp-li>img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/* 背景层 */
+.mjms-tp-li-bj{
+    width: 100%;
+    height: 100%;
+    background: rgb(5, 5, 5,0.5);
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 230px;
+}
+.mjms-tp-li-zt{
+    width: calc(100% - 40px);
+    padding: 30px 20px 0 20px;
+}
+.mjms-tp-li-zt-p1{
+
+    font-size: 28px;
+    color: #fff;
+    font-family: 900;
+}
+.mjms-tp-li-zt-p2{
+    margin-left: 10px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 19px;
+}
+.mjms-tp-li-zt-xia{
+    width: 100%;
+    margin-top: 25px;
+}
+.mjms-tp-li-zt-xia-p{
+    line-height: 25px;
+    color: #fff;
+}
+.mjms-tp-li-p{
+    z-index: 3;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background: none;
+    visibility: hidden;
+    cursor: pointer;
+    /* 鼠标进入形成手的形状 */
+}
+.mjms-tp-li-p:hover{
+       color: black;
+       background: #fff;
+       border: none;
+}
+
+.mjms-tp-li:hover .mjms-tp-li-p{
+    visibility: visible;
+}
+.msmj-xia{
+    width: 1200px;
+    height: 100px;
+    /* background: aquamarine; */
+    padding: 70px;
+    margin: 0 auto;
+}
+.msmj-xia-li{
+    height: 100%;
+    width: calc((100% - 560px) / 4);
+    text-align: center;
+    margin: 0 70px;
+    /* background: chartreuse; */
+}
+.msmj-xia-li-color{
+    color: rgb(182, 204, 198);
+}
+.msmj-xia-li-p1{
+    font-size: 18px;
+    line-height: 28px;
+}
+.msmj-xia-li-p2{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* 底部 */
+.db-bj{
+    width: 100%; 
+    height: 300px; 
+    background: rgb(39, 44, 50);
+    padding-top: 55px;
+}
+.db-shang{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(89, 88, 88);
+}
+.db-shang-tp{
+    width: 140px;
+}
+.db-shang-tp2{
+    margin-top: 30px;
+}
+.db-shang-wz-p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+}
+.db-shang-wz-p1{
+    color: #fff;
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 35px;
+    color: rgb(153, 153, 153);
+    cursor: pointer;
+    /* cursor: pointer; 鼠标放在li上时 光标呈现为指示链接的指针（一只手） */
+}
+.db-shang-wz-p1-dj:hover{
+    color: rgb(74, 144, 226);
+}
+.db-xia{
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+.db-xia-p{
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    line-height: 40px;
+}
+.db-xia-span{
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    line-height:12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-right: 1px solid rgb(153, 153, 153);
+    cursor: pointer;
+    /* cursor: pointer; 鼠标放在li上时 光标呈现为指示链接的指针（一只手） */
+}
+.db-xia-span:hover{
+    color: rgb(74, 144, 226);
+}
+.db-xia-span1{
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    line-height:12px;
+    padding-left: 5px;
+    border-right: 1px solid rgb(153, 153, 153);
+}
+
+
+
+/* 底部end */
+
+
+
+/* .mjms-tp-li:hover .mjms-tp-li-bj   名家名师鼠标放置事件
+{
+    position: absolute;
+    top: 0;
+    overflow: visible;
+} */
+
+
+
+
+
+
+
+/* display
+    display: none 隐藏对象
+    display: block 除了转换为块级元素以外，同时还有显示元素的意思
+    特点：隐藏之后不保留位置
+visibility
+    值hidden: 隐藏后还保留位置
+    值visible: 对象可视化
+overflow
+    检索或设置当对象的内容超过其指定高度及宽度时如何管理内容
+    visible: 不剪切内容也不添加滚动条
+    auto: 超出自动显示滚动条，不超出不显示滚动条
+    hidden: 不显示超过对象尺寸的内容， 超出的部分全部隐藏掉 (溢出隐藏)
+    scroll: 不管超出内容与否，总是显示滚动条 */

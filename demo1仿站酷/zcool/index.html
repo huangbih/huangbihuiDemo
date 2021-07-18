@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zcool</title>
+    <link type="text/css" href="./css/common.css" rel="stylesheet"/>
+    <link type="text/css" href="./css/index.css" rel="stylesheet"/>
+    <link type="text/css" href="./css/base.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/preview.css" />
+    <!-- 图片插件 -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/Fanpink.ico">
+</head>
+<body style="position: relative;">
+    <div class="chekColor">
+        <button onclick="myRed()" style="background-color: rgb(77, 0, 0);"></button>
+        <button onclick="myOrange()" style="background-color: rgb(244, 85, 0)"></button>
+        <button onclick="myYellow()" style="background-color: rgb(255, 252, 127)"></button>
+        <button onclick="myGreen()" style="background-color:rgb(0, 71, 5)"></button>
+        <button onclick="myBlue()" style="background-color:rgb(0, 56, 86)"></button>
+        <button onclick="myOrangePurple()" style="background-color: rgb(163, 0, 32)"></button>
+        <input type="color" oninput="cloChage()" id="cloSelect" value="#000000">
+    </div>
+
+    <div class="toTop">
+        <a href="#">Top</a>
+    </div>
+
+
+
+    <!-- 头部 -->
+    <header class="zHeader">
+        <nav class="nav-zHe">
+            <div class="logo">
+                <a href="#"><img src="./img/logo.png"></a>
+            </div>
+            <div class="header-menu-bar">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="../legaowuxian/ZCOOL.html">发现</a></li>
+                    <li><a href="job.html">职位</a></li>
+                    <li><a href="#">活动</a></li>
+                    <li><a href="hellorf.html">正版素材</a></li>
+                    <li><a href="../zhankugaoshuo/ZCOOL2.html">课程</a></li>
+                    <li><a href="#">版权保护</a></li>
+                    <li><a href="#">
+                        <i></i>
+                    </a></li>
+
+                    <div class="serch">
+                        <i></i>
+                    </div>
+                    <div class="user-center">
+                        <div class="header-upload">
+                            <a href="#" class="upload-link">
+                                <i></i>
+                            </a>
+                        </div>
+                    <ul class="unlogin">
+                        <a href="#">登录
+                            <i>&nbsp;|</i>
+                        </a>
+                        <a href="#">注册</a>
+                    </ul>
+                    </div>
+                </ul>
+            </div>
+
+            <div style="display:none;"></div>
+        </nav>
+    </header>
+
+    <div style="clear: both;"></div>
+    <!-- 头部 -->
+
+    <!-- 广告栏 -->
+    <main>
+        <div class="slider-adv-box">
+            <div class="slider-adv">
+                <div class="slider">
+                 
+                    <ul class="box"  style="border-radius: 5px;">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <a href="#" class="boxBtnLeft" id="nextL">  </a>
+                    <a href="#" class="boxBtnRight" id="next">  </a>
+                    
+                </div>
+                <div class="clear"></div>
+                <div class="advtop">
+                    <ul class="advtop_u">
+                        <li><a href="#" class="zoomImgBox"><img src="./img/018f505f6efd9e11013e458421d2c7.jpg" style="margin-left: 0;" class="zoomImg"></a></li>
+                        <li><a href="#" class="zoomImgBox"><img src="./img/0179e45f6ffbe411013f31103067cc.jpg" class="zoomImg"></a></li>
+                        <li><a href="#" class="zoomImgBox"><img src="./img/01f0d35f7146f711013f31102423f1.jpg" class="zoomImg"></a></li>
+                        <li><a href="#" class="zoomImgBox"><img src="./img/0159255f70623711013f311025e75c.jpg" class="zoomImg"></a></li>
+                        <li><a href="#" class="zoomImgBox"><img src="./img/0318d9c5f6e3ea311013e4584b81674.jpg" style="margin-right: 0;" class="zoomImg"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <div class="subnav-contentbox">
+                <ul class="subnav-content">
+                    <li class="tag" style="cursor: pointer;"><a>首页推荐</a></li>
+                    <li class="tag" style="cursor: pointer;"><a>最新发布</a></li>
+                    <div style="clear: both;"></div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 切换部分 -->
+        <div class="work_col tagPage" style="display: none;">
+            <!-- 内容 -->
+        <div class="all-work-list">
+            <div class="work-list-box">
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/011d3a5f89666411013f3110683dfc.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#">  </a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/474208d66afca4ecab23cdbfc2b59302.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"> </a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/abfbe0caef807ef02a65063852f151c3.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/bf54cc690eaa95f4e75d626a341e4204.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0115bb5f71916d11013f3110678561.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- 内容 -->
+            <div class="work-list-box">
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0120d15f70221811013f311060d6de.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/01f0d35f7146f711013f31102423f1.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0159255f70623711013f311025e75c.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0168ec5f71530d11013f31109f87ac.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/01707e5f70ad3611013f311061793e.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list-box">
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0179e45f6ffbe411013f31103067cc.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0184025f714ce711013e4584d91e29.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/156d8bc169abad54e86326bf17a03e03.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/bf54cc690eaa95f4e75d626a341e4204.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/01f0d35f7146f711013f31102423f1.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list-box">
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/abfbe0caef807ef02a65063852f151c3.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/474208d66afca4ecab23cdbfc2b59302.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/abfbe0caef807ef02a65063852f151c3.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/bf54cc690eaa95f4e75d626a341e4204.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                    <div class="card-img">
+                        <a href="#">
+                            <img src="./img/0115bb5f71916d11013f3110678561.jpg">
+                        </a>
+                    </div>
+                    <div class="card-info">
+                       <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                       <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                       <p class="card-info-item"> <a href="#"></a> </p>
+                    </div>
+                    <div class="card-item">
+                        <span class="user-avatar">
+                            <a>
+                                <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                            自由人
+                            </a>
+                        </span>
+                        <span class="time">
+                            一天前
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 选择 -->
+        <div class="pageturning">
+            <div class="clear">
+                <div class="laypage_main ">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">...</a>
+                    <a href="#">99</a>
+                    <a href="#">100</a>
+                    <a href="#">></a>
+                </div>
+            </div>
+        </div>
+        <!-- 选择   -->
+
+        <!-- 广告 下 -->
+        <div class="advlong-bottom clear">
+            <div class="advlong-bottom-box">
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="homePageGogoupAd">
+            <div class="work-pure-wrap">
+                <div>
+                    <span>推荐课程</span>
+                    <span style="color: coral;">换一换</span>
+                </div>
+                <div>
+                    <div class="gogoup-card-box gogoup-card-box-one">
+                       <a href="#"><img src="img/0124925f85410611013e4584a2be8d.jpg"></a>
+                       <div class="gogoup-card_title">
+                        <a href="#">AI卡通形象设计及延展</a>
+                    </div>
+                    </div>
+                    <div class="gogoup-card-box">
+                        <a href="#"><img src="img/8355b85f80e8eb2.jpg"></a>
+                        <div class="gogoup-card_title">
+                            <a href="#">品牌设计全流程</a>
+                        </div>
+                     </div>
+      
+                     <div class="gogoup-card-box">
+                        <a href="#"><img src="img/474208d66afca4ecab23cdbfc2b59302.jpg"></a>
+                        <div class="gogoup-card_title">
+                            <a href="#">AI商业插画</a>
+                        </div>
+                     </div>
+                     <div class="gogoup-card-box">
+                        <a href="#"><img src="img/156d8bc169abad54e86326bf17a03e03.jpg"></a>
+                        <div class="gogoup-card_title">
+                            <a href="#">著作权登记全新上线</a>
+                        </div>
+                     </div>
+                     <div class="gogoup-card-box">
+                        <a href="#"><img src="img/3d40e024a4dfd1072e6d874fb74021ae.jpg"></a>
+                        <div class="gogoup-card_title">
+                            <a href="#">创作不限制</a>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 广告 下 -->
+        </div>
+        <!-- 切换部分 -->
+
+                <!-- 切换部分2 -->
+                <div class="work_col tagPage" >
+                    <!-- 内容 -->
+                <div class="all-work-list">
+                    <div class="work-list-box">
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/01f0d35f7146f711013f31102423f1.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#">  </a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/3d40e024a4dfd1072e6d874fb74021ae.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/018f505f6efd9e11013e458421d2c7.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"> </a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/0168ec5f71530d11013f31109f87ac.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0120d15f70221811013f311060d6de.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/0115bb5f71916d11013f3110678561.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0179e45f6ffbe411013f31103067cc.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/0318d9c5f6e3ea311013e4584b81674.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/01707e5f70ad3611013f311061793e.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/abfbe0caef807ef02a65063852f151c3.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 内容 -->
+                    <div class="work-list-box">
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0120d15f70221811013f311060d6de.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/01f0d35f7146f711013f31102423f1.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0159255f70623711013f311025e75c.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0168ec5f71530d11013f31109f87ac.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/01707e5f70ad3611013f311061793e.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="work-list-box">
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0179e45f6ffbe411013f31103067cc.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/01fc3f5f715bd511013f311036f926.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/156d8bc169abad54e86326bf17a03e03.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/bf54cc690eaa95f4e75d626a341e4204.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/01f0d35f7146f711013f31102423f1.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="work-list-box">
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0318d9c5f6e3ea311013e4584b81674.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/474208d66afca4ecab23cdbfc2b59302.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/abfbe0caef807ef02a65063852f151c3.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/bf54cc690eaa95f4e75d626a341e4204.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+        
+                        <div class="card-box" style="margin: 0px 0px 0px 0px;">
+                            <div class="card-img">
+                                <a href="#">
+                                    <img src="./img/0115bb5f71916d11013f3110678561.jpg">
+                                </a>
+                            </div>
+                            <div class="card-info">
+                               <p class="card-info-title"> <a href="#">视觉酒吧</a> </p>
+                               <p class="card-info-type"> <a href="#">平面设计</a> </p>
+                               <p class="card-info-item"> <a href="#"></a> </p>
+                            </div>
+                            <div class="card-item">
+                                <span class="user-avatar">
+                                    <a>
+                                        <img src="./img/01498b5da5a1d5a8012163baf0e995.jpg" style="width: 30px;border-radius: 50%;">
+                                    自由人
+                                    </a>
+                                </span>
+                                <span class="time">
+                                    一天前
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 选择 -->
+                <div class="pageturning">
+                    <div class="clear">
+                        <div class="laypage_main ">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">...</a>
+                            <a href="#">99</a>
+                            <a href="#">100</a>
+                            <a href="#">></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 选择   -->
+        
+                <!-- 广告 下 -->
+                <div class="advlong-bottom clear">
+                    <div class="advlong-bottom-box">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="homePageGogoupAd">
+                    <div class="work-pure-wrap">
+                        <div>
+                            <span>推荐课程</span>
+                            <span style="color: coral;">换一换</span>
+                        </div>
+                        <div>
+                            <div class="gogoup-card-box gogoup-card-box-one">
+                               <a href="#"><img src="img/0124925f85410611013e4584a2be8d.jpg"></a>
+                               <div class="gogoup-card_title">
+                                <a href="#">AI卡通形象设计及延展</a>
+                            </div>
+                            </div>
+                            <div class="gogoup-card-box">
+                                <a href="#"><img src="img/8355b85f80e8eb2.jpg"></a>
+                                <div class="gogoup-card_title">
+                                    <a href="#">品牌设计全流程</a>
+                                </div>
+                             </div>
+              
+                             <div class="gogoup-card-box">
+                                <a href="#"><img src="img/474208d66afca4ecab23cdbfc2b59302.jpg"></a>
+                                <div class="gogoup-card_title">
+                                    <a href="#">AI商业插画</a>
+                                </div>
+                             </div>
+                             <div class="gogoup-card-box">
+                                <a href="#"><img src="img/156d8bc169abad54e86326bf17a03e03.jpg"></a>
+                                <div class="gogoup-card_title">
+                                    <a href="#">著作权登记全新上线</a>
+                                </div>
+                             </div>
+                             <div class="gogoup-card-box">
+                                <a href="#"><img src="img/3d40e024a4dfd1072e6d874fb74021ae.jpg"></a>
+                                <div class="gogoup-card_title">
+                                    <a href="#">创作不限制</a>
+                                </div>
+                             </div>
+                        </div>
+        
+                    </div>
+                </div>
+                <!-- 广告 下 -->
+                </div>
+                <!-- 切换部分2 -->
+    </main>
+    <div style="clear: both;"></div>
+    <!-- 内容 -->
+<!-- 尾部 -->
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-wrapper-top">
+            <div class="footer-wrapper-top-left">
+                <a href="#">移动版</a>
+                <a href="#">关于我们</a>
+                <a href="#">用户协议</a>
+                <a href="#">隐私政策</a>
+                <a href="#">侵权申诉</a>
+                <a href="#">企业服务</a>
+                <a href="#">帮助中心</a>
+                <a href="#">联系我们</a>
+                <a href="#">中文</a>
+                <a href="#">English</a>
+            </div>
+            <div class="footer-wrapper-top-right">
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="footer-wrapper-middle">
+            <a href="#">京公网安备11010502000501号</a>
+            <i></i>
+            <a href="#"> 广播电视节目制作经营许可证（京）字第06990号</a>
+            <i></i>
+            <a href="#">京ICP备11017824号</a>
+            <i></i>
+            <a href="#">京ICP证130164号</a>
+        </div>
+        <div class="police">
+            <a href="">营业执照</a>
+            <i></i>
+            <a href="">网上有害信息举报专区</a>
+            <i></i>
+            <span>不良信息举报电话：010-56538658</span>
+            <i></i>
+            <span>举报邮箱 jubao@zcool.com.cn </span>
+            <i></i>
+            <span>联系电话：010-56538600</span>
+            <div class="footer-copy-right">
+                Copyright © 2006-2020 
+                <a href="#">ZCOOL站酷</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- 尾部 -->
+
+
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!-- 颜色选择按钮 -->
+<script>
+    var cloSelect = document.querySelector("#cloSelect");
+
+    function myRed() {
+        document.getElementById("cloSelect").value="#870000";
+        cloChage();
+    }
+
+    function myOrange() {
+        document.getElementById("cloSelect").value="#F45500";
+        cloChage();
+    }
+
+    function myYellow() {
+        document.getElementById("cloSelect").value="#ffe300";
+        cloChage();
+    }        
+
+    function myGreen() {
+        document.getElementById("cloSelect").value="#004705";
+        cloChage();
+    }
+
+    function myBlue() {
+        document.getElementById("cloSelect").value="#003856";
+        cloChage();
+    }
+
+    function myOrangePurple() {
+        document.getElementById("cloSelect").value="#A30020";
+        cloChage();
+    }
+
+    function cloChage(){
+        var txt = cloSelect.value;
+        console.log(txt);
+        var body = document.querySelector("body");
+        var body2 = document.querySelector(".content-wrap");
+        var body3 = document.querySelector(".work_col");
+
+        body.style.cssText = "background:"+ txt;
+        body2.style.cssText = "background:"+ txt;
+        body3.style.cssText = "background:"+ txt;
+}
+</script>
+
+
+<!-- 图片插件 -->
+<script src="js/preview.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    showZoomImg('.zoomImg', 'img');
+    // showZoomImg('.zoomImgshow', 'text');
+</script>
+
+<!-- 页面切换 -->
+<script>
+    $(function(){
+        //最开始第一个标签高亮，第一个标签页显示；
+        $(".tag:eq(0)").css( { background: "#f8e300" } );
+        $(".tagPage:eq(0)").show();
+        $(".tagPage:eq(1)").hide();
+
+        $(".tag").click(function(){
+            //index：被点元素索引,item：被点元素原生对象；
+            //先把所有元素还原：标签无背景、标签页隐藏
+            $(".tag").css( { background: "none" } );
+            $(".tagPage").hide();
+            //把选中的内容显示
+
+            var index = $('.tag').index($(this));
+            console.log("获取索引值：",index );
+            $(this).css( { background: "#f8e300" } );
+            $(".tagPage:eq("+index+")").show();
+        });
+
+    });
+</script>
+
+</body>
+</html>

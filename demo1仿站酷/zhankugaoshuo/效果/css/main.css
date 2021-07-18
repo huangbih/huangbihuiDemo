@@ -1,0 +1,331 @@
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-decoration: none;
+    list-style-type: none;
+    vertical-align: bottom;
+    font-size: 16px;
+    color: #333;
+}
+.hotel{
+    width: 250px;
+    height: 620px;
+    background: rosybrown;
+    margin-top: 20px;
+}
+.hoteltop{
+    height: 30px;
+    width: 100%;
+   
+   
+}
+.t2 {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:560px;
+	
+	display:none;
+}
+.tab2 {
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:260px;
+	overflow:hidden;
+}
+.tab2 li {
+	float:left;
+	width:62px;
+	height:30px;
+	color:rgb(12, 10, 10);
+	border-top: 2px solid #dbdbdb;
+	text-align:center;
+	line-height:30px;
+	cursor:pointer;
+}
+.on {
+	display:block;
+}
+.tab2 li.cur2 {
+    border-top:2px solid #44bbb9 ;
+    color:#44bbb9;
+}
+.t2nr{
+    width: 100%;
+    height: 186px;
+    
+    margin-top: 5px;
+}
+.nri{
+    width: 100%;
+    height: 140px;
+    
+}
+.nrp2{
+    width: 100%;
+    height: 100%;
+    
+}
+.nrp3{
+    width: 55%;
+    height: 46px;
+    background: rgb(255, 255, 255);
+}
+.nrp3 p{
+   font-size: 12px;
+   line-height: 20px;
+   
+}
+.nrp3 img{
+    display: block;
+}
+.nrp4{
+    width: 45%;
+    height: 46px;
+    background: rgb(255, 255, 255);
+}
+
+/*头部导航和轮播*/
+.barBox{
+    height: 80px;
+    width: 100%;
+    background: #44bbb9;
+}
+.barBox2{
+    margin: 0 auto;
+    width: 1075px;
+    height: 100%;
+    
+}
+.logo{
+    width: 166px;
+    height: 100%;
+}
+
+.bar li{
+    float: left;
+    width: 120px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-right: white 1px solid;
+    text-align: center;
+    
+}
+
+.login{
+    width: 200px;
+    height: 100%;
+    
+}
+
+.bar4 li{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    color: rgb(255, 255, 255);
+    cursor:pointer;
+
+}
+.bar4 li.cur3{
+    background: #ffffff;
+    width: 100px;
+    height: 50px;
+    color: #44bbb9;
+    cursor:pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+
+
+.login img{
+    margin-top: 24px;
+}
+.sou{
+    width: 450px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.356);
+    position: absolute;
+    z-index: 9;
+    top: 300px;
+    left: 35%;
+    border-radius: 5px;
+    
+}
+.fang{
+    width: 50px;
+    height: 50px;
+    background: #44bbb9;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    border-radius: 0 5px 5px 0;
+}
+.fang img{
+    width: 50px;
+    height: 50px;
+}
+.sou input{
+   width: 300px;
+   height: 50px;
+   margin-left: 50px;
+   margin-top: 15px;
+   border-radius: 5px 0 0 5px;
+   border: none;
+}
+.location{
+    height: 30px;
+    width: 1075px;
+    margin: 0 auto;
+    padding-top: 10px;
+    position: relative;
+    z-index: 9;
+    
+}
+.location p{
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 50px;
+}
+
+/*六宫图切换*/
+.hotnr{
+    height: 225px;
+    width: 263px;
+    background: #ffffff;
+    float: left;
+    margin-left: 6.8px;
+    margin-top: 5px;
+}
+.i1{
+    width: 100%;
+    height: 170px;
+    background: #dbdbdb;
+}
+.p1 p{
+    text-align: center;
+    font-size: 19px;
+    margin-top: 5px;
+}
+.hot{
+    width: 804px;
+    height: 525px;
+    
+    margin-top: 20px;
+}
+.hottop{
+    height: 30px;
+    width: 100%;
+    
+}
+.hotel{
+    width: 250px;
+    height: 620px;
+    
+    margin-top: 20px;
+}
+.t {
+	margin:0;
+	padding:0;
+	width:810px;
+	height:460px;
+    display:none;
+    position: relative;
+    margin-left: -6px;
+}
+.tab {
+	margin:0;
+	padding:0;
+	list-style:none;
+	position: absolute;
+    overflow:hidden;
+    float: left;
+    margin-top: 470px;
+    margin-left: 255px;
+}
+.tab li {
+	float:left;
+	width:50px;
+	height:10px;
+	background:#dbdbdb;
+	color:#fff;
+	text-align:center;
+	line-height:30px;
+    cursor:pointer;  
+    margin-left: 10px;
+    display: inline;
+   
+}
+.on {
+	display:block;
+}
+.tab li.cur {
+	background:#44bbb9;
+}
+
+/*底下页数切换*/
+.num{
+    width: 100%;
+    height: 50px;
+    
+    margin-top: 40px;
+}
+.num2{
+    width: 80%;
+    height: 100%;
+   
+    margin: 0 auto;
+   
+}
+.num3{
+    width: 40%;
+    height: 100%;
+    
+    margin: 0 auto;
+    position: relative;
+    
+}
+.previous{
+    width: 60px;
+    height: 100%;
+   
+    position: absolute;
+    left: -70px;
+}
+.next{
+    width: 200px;
+    height: 100%;
+   
+    position: absolute;
+    right: -150px;
+}
+.tab3 li {
+    
+	float:left;
+	width:30px;
+	height:30px;
+	color:rgb(12, 10, 10);
+	border: 2px solid  #f4f4f4 ;
+	text-align:center;
+    line-height:30px;
+    margin-left: 8px;
+    cursor:pointer;
+    margin-top: 10px;
+    
+   
+}
+
+.tab3 li.cur3 {
+    border:2px solid #44bbb9;
+    
+}

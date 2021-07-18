@@ -1,0 +1,335 @@
+
+/* 广告 */
+main{
+    width: 100%;
+}
+.main-wrapper{
+    margin-bottom: 0px;
+}
+.slider-adv-box{
+    padding: 20px 0 24px 0;
+}
+.slider-adv{
+    width: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.slider{
+    width: 1380px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slider:hover 
+.boxBtnLeft{
+opacity: 1;
+}
+.slider:hover
+.boxBtnRight{
+opacity: 1;
+}
+.boxBtnLeft,
+.boxBtnRight{
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,.5);
+    font-size: 60px;
+    text-align: center;
+    text-indent: 0.2em;
+    line-height: 60px;
+    color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+.boxBtnLeft:hover,
+.boxBtnRight:hover{
+    color: #ffe300;
+}
+.boxBtnRight{
+    margin-left: 1300px;
+    text-indent: -0.3em;
+}
+.clear{
+    clear: both;
+}
+.advtop{
+    height: 300px;
+    /* background-color: #ccc; */
+    overflow: hidden;
+}
+.advtop_u{
+    width: 1380px;
+    height: 300px;
+    /* background-color:#999; */
+    margin: 0 auto;
+}
+.advtop_u>li{
+    background-color: seagreen;
+}
+.advtop_u>li>a>img{
+    float: left;
+    margin: 20px 10px; 
+    border-radius: 5px;
+    transition:all 0.5s;
+}
+.advtop_u li:hover img{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.box{
+    width: 4140px;
+    height: 100%;
+}
+.box li{
+    height: 100%;
+    width: 1380px;
+    float: left;
+}
+.box li:nth-child(1){
+    background: url(../img/017db05f717ccb11013f31102647d5.jpg);
+}
+
+.box li:nth-child(2){
+    background: url(../img/01a9795f8d533711013f3110de4e5.jpg);
+}
+
+.box li:nth-child(3){
+    background: url(../img/01fc3f5f715bd511013f311036f926.jpg);
+}
+
+/* 首页推荐 */
+.content-wrap {
+    width: 100%;
+    height: 56px;
+    background-color: #fff;
+}
+.subnav-contentbox {
+    width: 1130px;
+    margin: 0 auto;
+    position: relative;
+}
+.subnav-content {
+    font-size: 23px;
+    text-align: center;
+}
+.subnav-content>li {
+    padding: 0 30px;
+    line-height: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    position: relative
+}
+.subnav-content>li>a {
+    padding: 19px 0;
+    display: block;
+}
+
+/* 首页内容 */
+
+.work_col{
+    padding-top: 10px;
+    width: 100%;
+    height: 2000px;
+    background-color: #f5f5f5;
+    margin-top: 10px;
+}
+ .all-work-list{
+     width: 1380px;
+     height: 1000px;
+     margin: 0 auto;
+     /* background-color: #999; */
+ } 
+ .work-list-box {
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;     
+}
+.card-box {
+    float: left;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    margin: 0 20px 20px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    transition:all 0.8s;
+}
+
+.card-box:hover{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.card-info {
+    border-bottom: 1px solid #eee;
+    padding: 11px 16px 13px;
+    height: 75px;
+    position: relative;
+
+}
+.card-info-title {
+    font-size: 18px;
+    margin-bottom: 1px;
+    position: relative;
+    height: 20px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.card-info-title a{
+    color: black;
+}
+.card-info-type a{
+    line-height: 30px;
+    color: #666;
+}
+.card-info-item {
+    background: url(../img/000.png) no-repeat;
+    height: 20px;
+    
+}
+.card-item {
+    height: 50px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.user-avatar>a {
+    line-height: 24px;
+    font-size: 12px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+.user-avatar>a>img{
+    width: 24px;
+    vertical-align: middle;
+}
+.card-img img{
+    width: 260px;
+    height: 195px;
+    border-radius: 5px 5px 0px 0px;
+}
+.subnav-content>li:hover a
+{   color: #333;
+    border-bottom: 2px solid #333;
+}
+/* 首页内容 */
+/* 选择菜单 */
+.pageturning{
+    margin-top: 0 auto;
+}
+.laypage_main{
+    padding-top: 40px;
+    height: 100%;
+    font-size: 0;
+    clear: both;
+    text-align: center;
+}
+.laypage_main a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 38px;
+    margin: 0 3px;
+    color: #999;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.laypage_main a:nth-child(1){
+    background-color: #ffe300;
+}
+.laypage_main a:hover{
+    color:white;
+    background-color: #ffe300;
+
+}
+/* 选择菜单 */
+/* 广告 下 */
+.advlong-bottom{
+    margin: 30px auto 0;
+    height: 100px;
+}
+.advlong-bottom-box{
+    width: 1380px;
+    height: 100%;
+    margin: 0 auto;
+}
+.advlong-bottom-box a:hover{
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+.advlong-bottom-box a{
+    display: inline-block;
+    border-radius: 4px;
+    width: 680px;
+    height: 100%;
+    background-color: black;
+}
+.advlong-bottom-box>a:nth-child(1){
+    background-image: url(../img/01fc3f5f715bd511013f311036f926.jpg);
+}
+.advlong-bottom-box>a:nth-child(2){
+    margin-left: 15px;
+    background-image: url(../img/01f0d35f7146f711013f31102423f1.jpg);
+}
+.homePageGogoupAd{
+    margin-top: 16px;
+}
+.work-pure-wrap{
+    width: 1380px;
+    height: 220px;
+    margin: 0 auto;
+}
+.work-pure-wrap span{
+    line-height: 50px;
+    font-size: 14px;
+    color: #666;
+}
+.work-pure-wrap span:nth-child(2){
+    float: right;
+    cursor: pointer
+}
+.gogoup-card-box{
+    float: left;
+    margin-left: 32px;
+    width: 250px;
+    height: 170px;
+    border-radius: 4px;
+    background-color: white; 
+    transition:all 0.5s;
+}
+.gogoup-card-box:hover{
+    transform: scale(1.05);
+}
+.gogoup-card-box:nth-child(1){
+    margin-left: 0;
+}
+.gogoup-card-box img{
+    width: 250px;
+    height: 130px;
+    border-radius: 4px 4px 0px 0px;
+}
+.gogoup-card_title {
+    margin-top: 4px;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    color: black;    
+    line-height: 30px;
+    text-indent: 1em;
+}
+
+/* 广告 下 */

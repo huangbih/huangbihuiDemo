@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job</title>
+    <link type="text/css" href="./css/common.css" rel="stylesheet"/>
+    <link type="text/css" href="./css/job.css" rel="stylesheet"/>
+    <link type="text/css" href="./css/base.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- 粒子插件 -->
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/Fanpink.ico">
+</head>
+<body>
+    <div class="chekColor">
+
+        <button onclick="myRed()" style="background-color: rgb(77, 0, 0);"></button>
+        <button onclick="myOrange()" style="background-color: rgb(244, 85, 0)"></button>
+        <button onclick="myYellow()" style="background-color: rgb(255, 252, 127)"></button>
+        <button onclick="myGreen()" style="background-color:rgb(0, 71, 5)"></button>
+        <button onclick="myBlue()" style="background-color:rgb(0, 56, 86)"></button>
+        <button onclick="myOrangePurple()" style="background-color: rgb(163, 0, 32)"></button>
+        <input type="color" oninput="cloChage()" id="cloSelect" value="#000000">
+    </div>
+
+    <div class="toTop">
+        <a href="#">Top</a>
+    </div>
+   
+  
+
+
+        <!-- 头部 -->
+        <header class="zHeader">
+            <nav class="nav-zHe">
+                <div class="logo">
+                    <a href="#"><img src="./img/logo.png"></a>
+                </div>
+                <div class="header-menu-bar">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="../legaowuxian/ZCOOL.html">发现</a></li>
+                        <li><a href="job.html">职位</a></li>
+                        <li><a href="#">活动</a></li>
+                        <li><a href="hellorf.html">正版素材</a></li>
+                        <li><a href="../zhankugaoshuo/ZCOOL2.html">课程</a></li>
+                        <li><a href="#">版权保护</a></li>
+                        <li><a href="#">
+                            <i></i>
+                        </a></li>
+    
+                        <div class="serch">
+                            <i></i>
+                        </div>
+                        <div class="user-center">
+                            <div class="header-upload">
+                                <a href="#" class="upload-link">
+                                    <i></i>
+                                </a>
+                            </div>
+                        <ul class="unlogin">
+                            <a href="#">登录
+                                <i>&nbsp;|</i>
+                            </a>
+                            <a href="#">注册</a>
+                        </ul>
+                        </div>
+                    </ul>
+                </div>
+    
+                <div style="display:none;"></div>
+            </nav>
+        </header>
+
+        <!-- 头部 -->
+
+        <div id="large-header" class="large-header" style="position: fixed;">
+            <canvas id="demo-canvas"></canvas></div>
+    
+
+        <!-- 内容 -->
+    <div class="job-nav-wrap">
+        <div class="job-nav-out">
+            <span>北京</span>
+            <a href="#">切换城市>></a>
+            <div>
+                <ul>
+                <li>首页</li>
+                <li>企业</li>
+                <li>我发布的职位</li>
+            </ul>
+            </div>
+            
+            <a href="#" style="float: right;">我的简历</a>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+
+    <div class="job-body-wp">
+        <div class="job-content-wp">
+            <div class="pt-40 job-clearfix">
+                
+                <!-- 左列表 -->
+                <div class="side-left">
+
+                    <div class="sidex-left-index">
+                        <div class="side-left-user">
+                            <div class="side-item">
+                                <div class="dt">设计方向</div>
+                                <div class="dd">
+                                    <a href="#">平面</a>
+                                    <a href="#">UI</a>
+                                    <a href="#">视觉</a>
+                                    <a href="#">网页</a>
+                                    <a href="#">原画</a>
+                                    <a href="#">插画</a>
+                                    <a href="#">动画</a>
+                                    <a href="#">设计</a>
+                                    <a href="#">游戏UI</a>
+                                    <a href="#">3D设计</a>
+                                    <a href="#">多媒体</a>
+                                    <a href="#">摄影师</a>
+                                </div>
+                            </div>
+
+                            <div class="side-item" style="height: 90px;">
+                                <div class="dt">管理职位</div>
+                                <div class="dd">
+                                    <a href="#">设计经理</a>
+                                    <a href="#">设计总监</a>
+                                    <a href="#">视觉总监</a>
+                                    <a href="#">视觉经理</a>
+                                    <a href="#">交互经理</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-left-two mt-20">
+                        <a class="side-left-tw_u">
+                            <span>职位订阅</span>
+                            <i>></i>
+                        </a>
+                    </div>
+
+                    <div class="side-left-three mt-20">
+                        <div class="panel-header">联系招聘客服</div>
+                        <div class="panel-body">
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    <p>010-99999999</p>
+                                    <p>周一至周五 10:00-18:30</p>
+                                </li>
+                                <li>
+                                    <i></i>
+                                    <p>在线客服QQ：8888888</p>
+                                    <p>周一至周五 10:00-18:30</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="index-aside-four mt-20">
+                        <p>招聘顾问：招聘优秀同学</p>
+                        <p><img src="./img/0115bb5f71916d11013f3110678561.jpg" style="height: 130px;width: 130px;"></p>
+                        <p>优质职位/设计师每日一推</p>
+                    </div>
+
+                    <div class="mt-20" style="font-size: 13px; text-align: center;">
+                        <a href="">关于我们</a>
+                        <span>.</span>
+                        <a href="">常见问题</a>
+                        <span>.</span>
+                        <a href="">意见反馈</a>
+                        <span>.</span>
+                        <a href="">服务协议</a>
+                    </div>
+                </div>
+                <!-- 左列表 -->
+
+                <!-- 右列表 -->
+                <div class="index-article">
+
+                <!-- 搜索 -->
+                    <div class="index-searchbar-wrap">
+                        <form action="https://www.baidu.com">
+                            <div class="index-serchar">
+                                <input type="text" value="搜索职位或公司">
+                                <button>搜索</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- 热点     -->
+                    <div class="index-search-hot">
+                        <span>热门搜索：</span>
+                        <a href="#">UI</a>
+                        <a href="#">平面设计</a>
+                        <a href="#">实习</a>
+                        <a href="#">插画</a>
+                        <a href="#">网页设计</a>
+                    </div>    
+
+                    <!-- 广告 -->
+                    <div class="index-article-banner">
+                        <div class="slider">
+                 
+                            <ul class="box"  style="border-radius: 5px;">
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <a href="#" class="boxBtnLeft" id="nextL">  </a>
+                            <a href="#" class="boxBtnRight" id="next">  </a>
+                            
+                        </div>
+                    </div>
+
+                    <!-- 推荐 -->
+                    <div class="index-aricle-control mt-20">
+                        <div class="tab-category">
+                            <a href="#">推荐</a>
+                            <a href="#">最新</a>
+                        </div>
+                        <a href="#">⊕ 发布职位</a>
+                    </div>
+
+                    <!-- 岗位 -->
+                    <div class="index-jobs-list">
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="index-jobs-out mt-20">
+                            <div class="index-jobs">
+                                <div class="item-body-jobs">
+                                    <div class="job-left">
+                                        <div class="job-name">
+                                            <a href="#">高级动画师(深圳)</a>
+                                            <span>一小时前发布</span>
+                                        </div>
+                                        <div class="job-con">
+                                            <strong>15-10k</strong>
+                                            <span>经验3-5年/大专</span>
+                                        </div>
+                                    </div>
+                                        <div class="job-right">
+                                           <div class="pic-box">
+                                               <a href="#">
+                                                   <img src="./img/0120d15f70221811013f311060d6de.jpg" style="width: 50px;height: 50px;">
+                                               </a>
+                                           </div>
+                                           <div class="company-name" style="font-weight:bold;">
+                                               <span>treeddom()</span>
+                                           </div>
+                                           <div class="company-name">互联网/广告营销</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-footer-jobs">
+                                <div class="job-slogn">为颠覆而生！</div>
+                                <div class="job-tags">
+                                    <span>岗位晋升</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+                <div class="pageNav-w mt-20">
+                    <div class="pageNav-loading">
+                        <a href="#">加载更多</a>
+                    </div>
+                </div>
+
+                </div>
+
+ 
+                <!-- 右列表 -->
+
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+<!-- 内容 -->
+
+        <!-- 尾部 -->
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-wrapper-top">
+            <div class="footer-wrapper-top-left">
+                <a href="#">移动版</a>
+                <a href="#">关于我们</a>
+                <a href="#">用户协议</a>
+                <a href="#">隐私政策</a>
+                <a href="#">侵权申诉</a>
+                <a href="#">企业服务</a>
+                <a href="#">帮助中心</a>
+                <a href="#">联系我们</a>
+                <a href="#">中文</a>
+                <a href="#">English</a>
+            </div>
+            <div class="footer-wrapper-top-right">
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="footer-wrapper-middle">
+            <a href="#">京公网安备11010502000501号</a>
+            <i></i>
+            <a href="#"> 广播电视节目制作经营许可证（京）字第06990号</a>
+            <i></i>
+            <a href="#">京ICP备11017824号</a>
+            <i></i>
+            <a href="#">京ICP证130164号</a>
+        </div>
+        <div class="police">
+            <a href="">营业执照</a>
+            <i></i>
+            <a href="">网上有害信息举报专区</a>
+            <i></i>
+            <span>不良信息举报电话：010-56538658</span>
+            <i></i>
+            <span>举报邮箱 jubao@zcool.com.cn </span>
+            <i></i>
+            <span>联系电话：010-56538600</span>
+            <div class="footer-copy-right">
+                Copyright © 2006-2020 
+                <a href="#">ZCOOL站酷</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- 尾部 -->
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="js/job.js"></script>
+<script src="js/demo-2.js" type="text/javascript" charset="utf-8"></script>
+<!-- 粒子插件 -->
+
+
+<script>
+    var cloSelect = document.querySelector("#cloSelect");
+
+    function myRed() {
+        document.getElementById("cloSelect").value="#870000";
+        cloChage();
+    }
+
+    function myOrange() {
+        document.getElementById("cloSelect").value="#F45500";
+        cloChage();
+    }
+
+    function myYellow() {
+        document.getElementById("cloSelect").value="#ffe300";
+        cloChage();
+    }        
+
+    function myGreen() {
+        document.getElementById("cloSelect").value="#004705";
+        cloChage();
+    }
+
+    function myBlue() {
+        document.getElementById("cloSelect").value="#003856";
+        cloChage();
+    }
+
+    function myOrangePurple() {
+        document.getElementById("cloSelect").value="#A30020";
+        cloChage();
+    }
+
+    function cloChage(){
+        var txt = cloSelect.value;
+        console.log(txt);
+        var body = document.querySelector(".job-body-wp");
+        body.style.cssText = "background:"+ txt;
+}
+</script>
+
+</body>
+</html>

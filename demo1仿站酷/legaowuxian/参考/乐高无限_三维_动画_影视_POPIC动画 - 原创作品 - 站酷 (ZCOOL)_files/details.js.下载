@@ -1,0 +1,493 @@
+'use strict';
+
+var ObjId = $('#dataInput').attr('data-objid');
+var ObjType = $('#dataInput').attr('data-objtype');
+var idstr = location.pathname.substring(location.pathname.lastIndexOf('/') + 1, location.pathname.lastIndexOf('.'));
+
+var creatorId = $("input[name='creator']").val();
+
+// 获取微信小程序码 share.js中定义
+ZWxShare.zwxShareGetminiqrcode(ObjId, ObjType);
+
+$('.radio label').on('click', function (e) {
+    $("input[name=radio]").parent().removeClass().addClass('radio-1');
+    $("input[name=radio]:checked").parent().removeClass().addClass('radio-0');
+});
+
+// 详情页作者信息吸顶效果
+function infoFixedJudgment() {
+    var sT = $('.details-userinfo-wrap').offset().top - $('.normal-userinfo-box').height() - parseInt($('.details-userinfo-wrap').css('margin-top')); //底部限制
+    var top = $('.details-userinfo-wrap').get(0).offsetTop - $('.normal-userinfo-box').height() - parseInt($('.details-userinfo-wrap').css('margin-top'));
+    var Heig = document.documentElement.clientHeight;
+    var scrollLeft = $(document).scrollLeft();
+    if (top > Heig) {
+        if ($(document).scrollTop() > Heig) {
+            $('.normal-userinfo-box').addClass('fixed-card').css({
+                'left': $('.details-right-wrap').offset().left - scrollLeft
+            });
+            if ($(document).scrollTop() >= sT) {
+                $('.normal-userinfo-box').addClass('absolute-card').removeClass('fixed-card').css({
+                    'top': top,
+                    'left': 0
+                });
+            } else {
+                $('.normal-userinfo-box').removeClass('absolute-card').addClass('fixed-card').css({
+                    'top': 10,
+                    'left': $('.details-right-wrap').offset().left - scrollLeft
+                });
+            }
+            $('.right-fixed-wrap').hide();
+        } else {
+            $('.normal-userinfo-box').removeClass('fixed-card');
+            $('.right-fixed-wrap').show();
+            $('.normal-userinfo-box').removeClass('absolute-card');
+        }
+    }
+}
+
+function informationScroll() {
+
+    $(window).on('scroll resize', function () {
+        $('.the-album-wrap').css('margin-top', $('.details-userinfo-wrap').get(0).offsetTop + 'px').show();
+
+        infoFixedJudgment();
+    });
+}
+
+// **************
+
+function selectShow() {
+    $('.rightnew-arrows').on('click', function () {
+        // if ($(this).hasClass('select-shixin-arrow-up')) {
+        //     $(this).removeClass('select-shixin-arrow-up');
+        // } else {
+        //     $(this).addClass('select-shixin-arrow-up');
+        // }
+        $(this).parents('.infomation-work').find('.info-list').toggle();
+    });
+}
+
+function cricleMore() {
+    $('.indexcricle').hover(function () {
+        $('.indexcricle li').addClass('hover');
+    }, function () {
+        $('.indexcricle li').removeClass('hover');
+    });
+}
+
+// 获取用户信息
+function getUserPro(userId, FOLLOW_STATUS) {
+    var _getUserProSuccessCallback = getUserProSuccessCallback;
+    $.ajax({
+        type: "GET",
+        xhrFields: {
+            withCredentials: true
+        },
+        crossDomain: true,
+        headers: {
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        url: proMainZDomain + "/member/card/" + userId + ".json",
+        dataType: "json",
+        success: function success(data) {
+            // 成功回掉函数
+            _getUserProSuccessCallback(data, FOLLOW_STATUS);
+        }
+
+    });
+}
+
+function getUserProSuccessCallback(datas, FOLLOW_STATUS) {
+    datas.contentType = $('input[name=creator]').attr('value');
+    var authorCardHtml = template('author-cards', datas);
+    $('.author-card').html(authorCardHtml);
+    // *********文章详情页左内容区的作者信息渲染：
+    if ($('#author-info').length > 0) {
+        var authorCardHtmlSmall = template('author-info', datas);
+        $('.left-author-card').html(authorCardHtmlSmall);
+    }
+
+    // ModifyStyle()
+
+    // *********
+    $('.author-card .js-project-focus-btn,.left-author-card .js-project-focus-btn').append(zcoolFocusLoadingTpl);
+
+    var data = datas.data;
+    var guanZhuStatus = data["guanzhuStatus"];
+    var userUrl = data["userUrl"];
+    var memberHonors = data["memberHonors"];
+    var authorCardId = data["id"];
+    $('.indexcricle').attr('title', data.username);
+    // 超出三个作者身份icon
+    if (memberHonors.length > 3) {
+        $('.card-media .zcool-treetop').css({ 'width': '40px' });
+        $('.card-media .more-leaveout').css('display', 'inline-block');
+        $('.card-media .more-leaveout').find('.leaveout-tips').css({
+            'width': memberHonors.length * 21 + 32 + 'px',
+            'margin-left': -(memberHonors.length * 21 + 32) / 2 + 'px'
+        });
+    }
+
+    if (guanZhuStatus == FOLLOW_STATUS.NO_FOLLOW || guanZhuStatus == FOLLOW_STATUS.FOLLOWED) {
+        $('.attention').removeClass('btn-default-secondary').addClass('btn-default-main').addClass('notfollow').removeClass('following');
+        $('.attention').val(messagesWeb.common_follow);
+        $('.attention').attr('title', messagesWeb.common_follow_title);
+    } else if (guanZhuStatus == FOLLOW_STATUS.FOLLOW) {
+        $('.attention').addClass('btn-default-secondary').addClass('following').removeClass('notfollow').removeClass('btn-default-main');
+        $('.attention').val(messagesWeb.common_followed);
+        $('.attention').attr('title', messagesWeb.common_followed_title);
+    } else {
+        $('.attention').addClass('btn-default-secondary').removeClass('following').removeClass('notfollow').removeClass('btn-default-main');
+        $('.attention').val(messagesWeb.common_mutual_concern);
+        $('.attention').attr('title', messagesWeb.common_mutual_concern_title);
+    }
+}
+
+// 其他作品
+function getUserOthPro(ObjType, ObjId) {
+    var _getUserOthProSuccessCallback = getUserOthProSuccessCallback;
+    $.ajax({
+        type: "GET",
+        xhrFields: {
+            withCredentials: true
+        },
+        crossDomain: true,
+        headers: {
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        dataType: "json",
+        url: proMainZDomain + "/content/other.json?objectType=" + ObjType + "&objectId=" + ObjId,
+        success: function success(data) {
+            _getUserOthProSuccessCallback(data);
+        }
+    });
+}
+
+function getTeamInfo() {
+    $('.js-a-team-info').html(LoaddingDom);
+    $.ajax({
+        type: "GET",
+        xhrFields: {
+            withCredentials: true
+        },
+        crossDomain: true,
+        headers: {
+            "X-Requested-With": "XMLHttpRequest"
+        },
+        dataType: "json",
+        url: proMainZDomain + "/zteamForDetail?id=" + $('.js-a-team-info').attr('data-zteamid'),
+        success: function success(data) {
+            if (data.code == 0) {
+                if (data.result) {
+                    var html = template('details-team-info-tpl', data);
+                    $('.js-a-team-info').html(html);
+                } else {
+                    $('.js-a-team-info').html('');
+
+                    if (ObjType === '8' && $('.info-list li').length === 0) $('.right-fixed-wrap').remove();
+                }
+            }
+        }
+    });
+}
+
+getTeamInfo();
+
+//lazy load image
+function lazyLoadImage(num) {
+    var num = num || 0;
+    var deferreds = [];
+    var i = 0;
+    var batchNum = 0;
+    var loadNumPerTime = 3;
+    var headNumUncontrol = 3;
+    var initScreenWidth = $(window).width() > 1600 ? 1280 : 1130;
+
+    $('.lazy-img-class').each(function (index, ele) {
+        var $this = this;
+
+        // init blur image screen width
+        if ($($this).data('width') > initScreenWidth) {
+            $('.reveal-work-wrap').eq(index + headNumUncontrol).find('img').width(initScreenWidth);
+        } else {
+            $('.reveal-work-wrap').eq(index + headNumUncontrol).find('img').width($($this).data('width'));
+        }
+
+        batchNum = Math.floor(index / loadNumPerTime);
+
+        if (batchNum === num) {
+            deferreds.push(new $.Deferred());
+            var img = new Image();
+            img.src = $($this).data('src');
+            img.onload = function () {
+                $($this).attr('src', $($this).data('src'));
+            };
+            img.onerror = function () {
+                $($this).attr('src', $($this).data('src'));
+            };
+        }
+
+        // When image is loaded, resolve the next deferred
+        $($this).load(function () {
+            if (!deferreds[i]) return;
+            deferreds[i].resolve();
+            i++;
+        }).error(function () {
+            if (!deferreds[i]) return;
+            deferreds[i].reject();
+            i++;
+        });
+    });
+
+    // When all deferreds are done (all images loaded) do some stuff
+    $.when.apply(null, deferreds).done(function () {
+        if (num < batchNum) lazyLoadImage(num + 1);
+    });
+}
+
+// 作品详情页 加载内容图片时
+lazyLoadImage();
+
+// function ModifyStyle() {
+//   // #####urgent###### 
+//   if (creatorId === getUid()) {
+//     $('.details-userinfo-wrap .author-info, .details-right-author-wrap .author-info').addClass('items-col-center').find('.btn-area').remove()
+//     $('.details-userinfo-wrap .author-info, .details-right-author-wrap .author-info').find('.position-info').css('margin-bottom', '0')
+//   }
+// }
+
+$(function () {
+  // ModifyStyle()
+
+    $('.copy-con .copy-icon').hover(function () {
+        $(this).find("i").show().css({
+            'margin-left': -$(this).find("i").width() / 2 - 18 + 'px'
+        });
+        if ($(this).find("i").width() / 2 > $(this).position().left) {
+            $(this).find("i").show().css({
+                'margin-left': -$(this).find("i").width() / 2 - 18 + ($(this).find("i").width() / 2 - $(this).position().left) + 18 + 'px'
+            });
+        }
+    }, function () {
+        $(this).find("i").hide();
+    });
+    cricleMore();
+    selectShow();
+    // 初始关注
+    // var userId = $("input[name='creator']").val();
+    // var contentId = $("input[name='contentId']").val();
+
+    // 用户其他作品
+    getUserOthPro(ObjType, ObjId);
+
+    (function () {
+        var avatarPlusisLoading = true;
+        var offset = 9;
+        var recommendAvatar = $('#recommendedAvatar')
+
+        ZAjax('get', proMainZDomain + '/getMoreRecommendDesigner?objectId=' + ObjId + '&objectType=' + ObjType).then(function (res) {
+          var total = res.data.total
+
+          if (total > 0) {
+            recommendAvatar.removeClass('hide').find('.js-recommended-total').html(total).find('.js-recommended-avatar').attr('data-total', total)
+            var avatarTpl = template('avatar-40-templ', res.data);
+            recommendAvatar.find('.js-recommended-avatar').append(avatarTpl)
+
+            if (total > 9) {
+              recommendAvatar.find('.js-recommended-avatar').append('<div class="recommended-designer_more js-plus-n">+' + (total - 9) + '</div>')
+            }
+          }
+        })
+
+        recommendAvatar.on('click', '.js-plus-n', function () {
+            var _this = $(this);
+            var defaultSize = 9;
+            var recommendAvatarTotal = parseInt($('.js-recommended-total').text());
+            var hideAvatar = $('.js-recommended-avatar .avatar-container-40:eq(8)').nextAll('.avatar-container-40');
+
+            if (_this.attr('swichflag')) {
+                if (_this.attr('swichflag') === "0") {
+                    _this.attr('swichflag', 1).text(messagesWeb["lifeCircle"].packUp);
+                    hideAvatar.removeAttr('style');
+                    $('.js-recommended-avatar').addClass('recommended-designer_up');
+                } else {
+                    hideAvatar.hide();
+                    _this.attr('swichflag', 0).text('+' + (recommendAvatarTotal - defaultSize));
+                    $('.js-recommended-avatar').removeClass('recommended-designer_up');
+                }
+            } else {
+                if (!avatarPlusisLoading) return false;
+
+                avatarPlusisLoading = false;
+                ZAjax('get', proMainZDomain + '/getMoreRecommendDesigner?objectId=' + ObjId + '&objectType=' + ObjType + '&offset=' + offset).then(function (res) {
+                    var data = res.data;
+
+                    var avatarTpl = template('avatar-40-templ', data);
+                    _this.before(avatarTpl);
+                    offset = offset + data.content.length;
+                    if ($('.js-recommended-avatar .avatar-container-40').length >= recommendAvatarTotal) {
+                        _this.attr('swichflag', 1).text(messagesWeb["lifeCircle"].packUp);
+                    } else {
+                        _this.text('+' + (recommendAvatarTotal - $('.js-recommended-avatar .avatar-container-40:visible').length));
+                    }
+                    $('.js-recommended-avatar').addClass('recommended-designer_up');
+                    avatarPlusisLoading = true;
+                });
+            }
+        });
+    })();
+});
+
+$(document).bind("contextmenu", ".no-right-key", function (e) {
+    if (e.target.className.indexOf('no-right-key') > -1) {
+        return false;
+    }
+});
+
+zcustomScrollbarFadeout($(".js-scroll-wrap"));
+
+function mainStationRecommend(domId) {
+
+    var recommendCount = $("#" + domId + " .recommend-number").html();
+
+    recommendCount = parseInt(recommendCount) + 1;
+
+    $("#" + ZcRecommend.domConfig.recommendId + " .recommend-number").html(recommendCount);
+
+    $("#" + ZcRecommend.domConfig.recommendBigImageId + " .recommend-number").html(recommendCount);
+    $("#" + ZcRecommend.domConfig.recommendBigImageId).removeClass("normal").addClass("active").attr("title", messagesWeb["recommend"].title_Recommended);
+    $('.js-details-common-recommend').removeClass("normal").addClass("active");
+
+    mainAddRecommendDesigner();
+}
+
+var GogoupAd = {
+    detailSearch: function detailSearch() {
+        var cateId = ObjType === '3' ? $('#dataInput').attr('data-cateid') : $('#dataInput').attr('data-catestr').split(',')[0];
+
+        $.ajax({
+            type: "get",
+            dataType: "jsonp",
+            jsonp: "jsonpcallback",
+            url: gogoupApi + "/p1/data/search?cateId=" + cateId + "&teacherId=" + creatorId + "&pageNo=1&pageSize=4",
+            success: function success(data) {
+                if (data.resultCode === 'SUCCESS' && data.total > 0) {
+                    var dataList = data.datas;
+                    var gogoupRecommendAd = template('details-gogoupad-templ', { data: dataList });
+                    $('#detailsGogoupAd').append(gogoupRecommendAd).slideDown();
+                }
+            }
+        });
+    }
+};
+
+ZunloginedUpdateStatusCbs.push(function () {
+    // window.location.reload();
+    $('.js-details-common-recommend').removeClass('active').addClass('normal');
+    $('.js-fixed-attention').removeClass('hide');
+    $('#demoCanvas').remove();
+    $(".follow-box .attention, .js-fixed-attention").addClass('notfollow').removeClass('following');
+
+    $(".follow-box .attention").removeClass('btn-default-secondary').addClass('btn-default-main');
+    $(".follow-box .attention").val(messagesWeb.common_follow).attr('title', messagesWeb.common_follow_title);
+
+    $(".js-fixed-attention").text(messagesWeb.common_follow).removeClass('cursor-pointer c-999').addClass('zcool-link-color');
+    $('.js-project-fav').attr('title', messagesWeb.fav_title_fav).val(messagesWeb.fav_title_fav);
+});
+
+function detailsWShowA() {
+  if (getUid() === '0' && !getCookieKey('isw_showed')) {
+    ZAjax('get', proMainZDomain + '/showLoginWindow')
+    doLoginWindow(function() {
+      doUpdatePageAllStatus()
+    })
+    $("#popLogin .login-close").hide()
+    document.cookie = "isw_showed=" + escape(1) + ";expires=1;path=/;domain=" + zRootDomain;
+  }
+}
+
+var randomTips = [{
+  tag: '1',
+  title: "每天都有超多优秀设计等你来看，<br />登录再浏览吧~"
+}, {
+  tag: '2',
+  title: "小Z一直在等你，火速登录，<br />加入我们~"
+},{
+  tag: '3',
+  title: "工作使我快乐，<br />不如逛站酷快乐！"
+}, {
+  tag: '4',
+  title: "小Z喊话：<br />你是不是忘了什么事，<br />比如登录…"
+}, {
+  tag: '5',
+  title: "看在小Z强行营业的份上，<br />登录一下吧！"
+}, {
+  tag: '6',
+  title: "小Z喊话：<br />加入站酷，我们一起肩并肩！"
+}, {
+  tag: '7',
+  title: "我的小可爱在吗？<br />小Z请你来登录了~"
+}, {
+  tag: '8',
+  title: "海量优质设计等待热爱学习的你，<br />去登录学习~"
+}, {
+  tag: '9',
+  title: "等你好久了，快速登录，<br />一起来搞事情！"
+}];
+
+var randomNum = Math.floor(Math.random() * randomTips.length);
+
+var loginTipsHtml = '<div style="position: absolute; top: 89px; display: flex; font-size: 20px; align-items: center;">\n  <img src="' + proStaticZDomain + '/z/images/svg/' + randomTips[randomNum].tag + '.svg" width="108" />\n  <p style="font-weight: bold; margin-left: 10px;">' + randomTips[randomNum].title + '</p>\n </div>';
+
+function detailsWShowB() {
+  if (getUid() === '0') {
+    var winAutoShowCount = parseInt(getCookieKey('r_drefresh_count')) || 0;
+    winAutoShowCount++
+    document.cookie = "r_drefresh_count=" + escape(winAutoShowCount) + ";expires=1;path=/;domain=" + zRootDomain;
+    
+    if (winAutoShowCount >= 5) {
+      
+      doLoginWindow(function() {
+        doUpdatePageAllStatus()
+        ZAjax('get', proMainZDomain + '/showLoginWindow?picturetype=' + randomTips[randomNum].tag)
+      })
+
+      $('.login-close').css({top: '72px'})
+
+      $('#popLogin').css({
+        background: 'url(' + proStaticZDomain + '/z/images/svg/login_bg.svg) no-repeat',
+        height: '613px',
+        padding: '203px 24px 0',
+        marginTop: '-371px'
+      }).append(loginTipsHtml);
+    }
+  }
+}
+
+detailsWShowB()
+
+// (function($){
+//   $.zPackUpToggle = function(options) {
+
+//   }
+// })(jQuery)
+
+
+// $.ajax({
+//   type: "get",
+//   url: serverApi + "/wxshare/getQrcode?id=" + ObjId + "&objectType=" + ObjType,
+//   dataType: "json",
+//   contentType: 'application/json',
+//   success: function(data) {
+//     $('#app-code').append('<image src="' + data.data + '" />')
+//   }
+// })
+
+// $('#share').on('click', function () {
+//     showGlobalMaskLayer();
+//     $('#pop-share').removeClass('hide');
+// })
+// $('#pop-share .pop-close').on('click', function () {
+//     $(this).parents('#pop-share').addClass('hide');
+//     hideGlobalMaskLayer();
+// })

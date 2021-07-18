@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/*-- 页面辅助文字 --*/
+/*-- 页面辅助文字 --*/
+/* -- 按钮 -- */
+/*-- 文本截取，超出一行行加省略号 --*/
+/*-- 文本截取，超出两行加省略号 --*/
+/*-- 圆角 --*/
+/*-- inline-block --*/
+/*-- 透明度 --*/
+/*-- 一级下拉菜单样式 --*/
+/*-- 导航下拉菜单原始样式 --*/
+/*-- 导航下拉菜单hover样式 --*/
+/*-- new标记 --*/
+/*-- 分隔符 --*/
+.comment-module .commentcon .comment-info-box, .comment-module .commentcon .quote-content-wrap { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+
+/*-- 按钮通用 --*/
+/*-- 卡片透明度 --*/
+/*-- 小三角朝下投影效果 --*/
+.comment-module { background: #ffffff; }
+
+.comment-module .pinlunt { position: relative; }
+
+.comment-module .pinlunt .commentbig { height: 60px; }
+
+.unlogin-textarea-wrap { width: 100%; height: 60px; border: 1px solid #dddddd; background: #f4f4f4; border-radius: 4px; -webkit-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 0; left: 0; }
+
+.brilliant { width: 24px; height: 32px; line-height: 28px; text-align: center; color: #ffffff; font-size: 14px; background-color: #f4523b; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; position: absolute; top: 0; right: 30px; }
+
+.brilliant:after { content: ""; display: block; position: absolute; bottom: 0; border-top: none; border-right: 12px solid transparent; border-bottom-width: 5px; border-bottom-style: solid; border-bottom-color: #ffffff; border-left: 12px solid transparent; }
+
+.comment-module .editcomment { padding: 30px; }
+
+.comment-module .allcomment-box { padding-top: 30px; *zoom: 1; position: relative; }
+
+.comment-module .allcomment-box:after { content: ""; display: table; }
+
+.comment-module .allcomment-box:after { clear: both; }
+
+.comment-module .allcomment-box:before { content: ""; display: block; width: 100%; height: 1px; background: #eeeeee; position: absolute; left: 0; top: 0px; }
+
+.comment-module .allcomment-empy, .comment-module .preview-empty { min-height: 230px; padding-top: 98px; text-align: center; font-size: 14px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.comment-module .allcomment-empy { padding-top: 180px; background: #fff url(../images/qiangsafa.png) no-repeat center 23px; background-size: 190px auto; }
+
+.comment-module .reply-content-wrap { margin-top: 19px; padding: 0; }
+
+.comment-module .commentwrap { padding: 0 30px; position: relative; }
+
+.comment-module .commenttxt { padding: 0 30px; }
+
+.comment-module .commentcon li { padding: 30px 0; border-bottom: 1px solid #f1f1f1; }
+
+.comment-module .commentcon li:last-child { border-bottom: 0; }
+
+.comment-module .commentcon li:hover .comment-report { display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
+
+.comment-module .commentcon .comment-info-box { width: 100%; padding-left: 68px; position: relative; *zoom: 1; }
+
+.comment-module .commentcon .comment-info-box:after { content: ""; display: table; }
+
+.comment-module .commentcon .comment-info-box:after { clear: both; }
+
+.comment-module .commentcon .comment-info-box .userimg { width: 48px; height: 48px; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
+
+.comment-module .commentcon .comment-info-box .userimg img { border-radius: 50%; width: 100%; height: 100%; }
+
+.comment-module .commentcon .comment-info-box .commoncon { margin-top: 8px; line-height: 24px; font-size: 14px; word-break: break-word; }
+
+.comment-module .commentcon .comment-info-box .comment-zan, .comment-module .commentcon .comment-info-box .comment-news, .comment-module .commentcon .comment-info-box .comment-report, .comment-module .commentcon .comment-info-box .gbook-delete { height: 20px; line-height: 20px; padding-left: 20px; background-repeat: no-repeat; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; background-position: left center; cursor: pointer; }
+
+.comment-module .commentcon .comment-info-box .comment-report { visibility: hidden; }
+
+.comment-module .commentcon .comment-info-box .comment-news { margin-left: 20px; background-image: url(../images/svg/pinglunqian.svg?v=2); }
+
+.comment-module .commentcon .comment-info-box .comment-news:hover { background-image: url(../images/svg/pinglunhover.svg?v=2); }
+
+.comment-module .commentcon .comment-info-box .comment-zan { margin-left: 15px; font-size: 12px; color: #999999; background-image: url(../images/svg/pinglundianzanqian.svg?v=2); }
+
+.comment-module .commentcon .comment-info-box .comment-zan:hover { background-image: url(../images/svg/pinglundianzanhover.svg?v=2); }
+
+.comment-module .commentcon .comment-info-box .comment-zan.active { background-image: url(../images/svg/pinglundianzanhover.svg?v=2); }
+
+.comment-module .commentcon .comment-info-box .gbook-delete { margin-left: 25px; background-image: url(../images/svg/shanchu.svg?v=1); background-size: 16px 17px; -webkit-background-size: 16px 17px; -moz-background-size: 16px 17px; }
+
+.comment-module .commentcon .comment-info-box .hide { display: none; }
+
+.comment-module .commentcon .comment-info-box .isEffectComment.hide { display: block; }
+
+.comment-module .commentcon .js-comment-list:hover .comment-report:not(.hide), .comment-module .commentcon .gbook-list-box:hover .comment-report:not(.hide) { visibility: visible; }
+
+.comment-module .commentcon .js-comment-list:hover .gbook-delete.del-hover-show, .comment-module .commentcon .gbook-list-box:hover .gbook-delete.del-hover-show { display: inline-block; }
+
+.comment-module .commentcon .quote-content-wrap { width: 100%; margin-top: 28px; background: #f4f4f4; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; position: relative; font-size: 14px; }
+
+.comment-module .commentcon .quote-content-wrap::before { content: ""; display: block; border-top: none; border-right: 15px solid transparent; border-bottom: 15px solid #f4f4f4; border-left: 15px solid transparent; position: absolute; top: -12px; left: 15px; }
+
+.comment-module .commentcon .quote-content-wrap .comment-list { padding: 20px 0; margin: 0 30px; border-top: 1px solid #e5e5ee; }
+
+.comment-module .commentcon .quote-content-wrap .comment-list:first-of-type { border-top: 0; }
+
+.comment-module .commentcon .quote-content-wrap .seconds-comments-more { color: #666666; padding: 20px; border-top: 1px solid #e5e5ee; text-align: center; cursor: pointer; }
+
+.comment-module .commentcon .quote-content-wrap .brilliant::after { border-bottom-color: #f4f4f4; }
+
+.report { padding-left: 22px; color: #bbbbbb; font-size: 12px; background-image: url(../images/svg/jubaoqian.svg?v=1); background-repeat: no-repeat; background-size: 16px; }
+
+.report:hover { color: #282828; background-image: url(../images/svg/jubaohover.svg?v=1); }
+
+.more-comment { line-height: 14px; padding: 30px; border-top: 1px solid #eeeeee; text-align: center; background: #ffffff; }
+
+.more-comment .view-more-text { color: #d36f16; font-size: 14px; cursor: pointer; }
+
+.more-comment .write-comments { float: right; color: #999999; padding-left: 20px; background: url(../images/svg/xiepinglun.svg) no-repeat left center; }
+
+.more-comment .write-comments:hover { color: #444444; background: url(../images/svg/xiepinglunhover.svg) no-repeat left center; }
+
+.add-gbook, .add-comment-btn, .reply-comment-btn { min-width: 100px; float: right; }
+
+@media (max-width: 1440px) { .comment-module { max-width: 1130px; } }
+
+@media (max-width: 1920px) { .comment-module { max-width: 1380px; } }
+
+.reply-list-covers { width: 100%; }
+
+@-webkit-keyframes smallColEffect1 { 0% { max-height: 0; }
+  100% { max-height: 1000px; } }
+
+@keyframes smallColEffect1 { 0% { max-height: 0; }
+  100% { max-height: 1000px; } }
+
+@-webkit-keyframes Effect1 { 0% { max-height: 0; }
+  100% { max-height: 99999px; } }
+
+@keyframes Effect1 { 0% { max-height: 0; }
+  100% { max-height: 99999px; } }
+
+@-webkit-keyframes Effect2 { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes Effect2 { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@-webkit-keyframes Effect3 { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+
+@keyframes Effect3 { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+
+@-webkit-keyframes Effect4 { 0% { max-height: 99999px; }
+  100% { max-height: 0; } }
+
+@keyframes Effect4 { 0% { max-height: 99999px; }
+  100% { max-height: 0; } }
+
+.isEffectComment { overflow: hidden; opacity: 0; max-height: 0; -webkit-animation-duration: 0.3s, 0.3s; animation-duration: 0.3s, 0.3s; -webkit-animation-timing-function: ease-in, ease-in; animation-timing-function: ease-in, ease-in; -webkit-animation-delay: 0s, 0.2s; animation-delay: 0s, 0.2s; -webkit-animation-fill-mode: both, both; animation-fill-mode: both, both; -webkit-animation-direction: alternate, alternate; animation-direction: alternate, alternate; }
+
+.isFadeIn { -webkit-animation-name: Effect1, Effect2; animation-name: Effect1, Effect2; }
+
+.reply-list-covers.isFadeIn, .quote-content-wrap .comment-list.isFadeIn { -webkit-animation-name: smallColEffect1, Effect2; animation-name: smallColEffect1, Effect2; }
+
+.isFadeOutEffect { -webkit-animation-name: Effect3, Effect4; animation-name: Effect3, Effect4; }
